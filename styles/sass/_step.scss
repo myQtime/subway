@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+.step {
+    .textMiddle {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #008938;
+    }
+    .step123 {
+        position: relative;
+        width: 80%;
+        list-style: none;
+        .number {
+            font-size: 80px;
+            font-weight: 900;
+            color: #cce7d9;
+        }
+        .stepText {
+            margin-top: -10px;
+            height: 40%;
+        }
+        p {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-weight: 400;
+            span {
+                color: #008938;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            border-top: 8px solid #f1b71c;
+            width: 100%;
+        }
+        li {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                border: 8px solid #008938;
+                width: 20px;
+                height: 20px;
+                background-color: #008938;
+                border-radius: 50%;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%) translateY(-25%);
+                z-index: 50;
+            }
+        }
+    }
+}

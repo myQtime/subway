@@ -1,0 +1,16 @@
+.footer {
+    background-color: #f2b700;
+    .law,
+    .copyRight {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .law {
+        a {
+            cursor: pointer;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}

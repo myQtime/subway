@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+.play {
+    background: #e9e9e9;
+}
+
+.playTitle {
+    background: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #008938;
+    .lineDeco {
+        flex-grow: 1;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 5px;
+            background: #008938;
+        }
+    }
+    .secondText {
+        display: inline;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            left: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            background: url(../../img/arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            display: block;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            right: -48px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            background: url(../../img/greenNote.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50%;
+        }
+    }
+}
+
+.leftPart {
+    width: 50%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    .disk-ham {
+        position: relative;
+        .disk {
+            width: 45%;
+        }
+        .ham {
+            position: absolute;
+            width: 70%;
+            top: 50%;
+            left: 100%;
+            transform: translate(-100%, -60%);
+        }
+    }
+    .soundEffect {
+        margin-top: -15px;
+    }
+}
+
+.controller {
+    button {
+        // background: linear-gradient(to bottom, #007b32 20%, #008938 80%, #0e8f43 100%);
+        background-color: #008938;
+        box-shadow: 2px 2px 5px #00af46 inset, -2px -2px 5px #006b2d inset, 0px 5px 5px #d6d6d6;
+        // box-shadow: 0px 5px 5px #d6d6d6;
+        &:hover {
+            // background: linear-gradient(to bottom, #007b32 20%, #008938 80%, #0e8f43 100%);
+            background-color: #008938;
+            box-shadow: 2px 2px 5px #00af46 inset, -2px -2px 5px #006b2d inset, 0px 5px 5px #d6d6d6;
+        }
+    }
+    .playBtn {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-image: url(../../img/play.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 70% 50%;
+        }
+    }
+    .pauseBtn {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-image: url(../../img/pause.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+    .downloadBtn {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background-image: url(../../img/download.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+    .redoBtn {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.playType {
+    button {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 700;
+        color: #008938;
+        background-color: #f2b701;
+        box-shadow: 2px 2px 5px #fbd45e inset, -2px -2px 5px #d4a004 inset, 0px 5px 5px #d6d6d6;
+        &:hover {
+            color: #008938;
+            background-color: #f2b701;
+            box-shadow: 2px 2px 5px #fbd45e inset, -2px -2px 5px #d4a004 inset, 0px 5px 5px #d6d6d6;
+        }
+    }
+}
+
+.range {
+    .rangeBtn {
+        width: 50%;
+        height: 100%;
+        appearance: none;
+        position: relative;
+        z-index: 5;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0%;
+            left: 0%;
+            transform: translate(0%, 0%);
+            width: 100%;
+            height: 100%;
+            background-color: #e9e9e9;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../../img/volumnX.png);
+            z-index: -5;
+        }
+        &::-webkit-slider-thumb {
+            appearance: none;
+            background: url(../../img/range.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 30px;
+            height: 30px;
+            transform: translate(0%, -15%);
+        }
+    }
+    .knob {
+        width: 20%;
+    }
+}
+
+.rightPart {
+    width: 50%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    .peopleList {
+        list-style: none;
+        li {
+            width: 20%;
+        }
+    }
+    .intro {
+        position: relative;
+        background: #008938;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 16px;
+        z-index: 5;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 18px;
+            height: 18px;
+            left: 50%;
+            top: -5px;
+            transform: translateX(-50%) rotate(45deg);
+            background: #008938;
+            z-index: -1;
+        }
+    }
+}
+
+.foodGroup {
+    &:hover {
+        background: linear-gradient(to bottom, #94bfa8, #e9e9e9);
+        .foodGroupText {
+            background-color: #038d43;
+        }
+    }
+    .foodGroupText {
+        background-color: #919191;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.food {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .foodName {
+            opacity: 1;
+        }
+    }
+    .foodName {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #008938;
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0;
+    }
+    .actived {
+        opacity: 1;
+    }
+}
+
+.moreChoice {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #008938;
+    letter-spacing: 2px;
+}
