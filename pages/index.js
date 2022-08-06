@@ -24,7 +24,7 @@ export default function home() {
             <IgBlock />
             <Play />
             <Notice />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
