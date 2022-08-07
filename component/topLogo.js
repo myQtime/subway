@@ -5,10 +5,12 @@ export default function topLogo() {
     return (
         <>
             <div className="topLogo">
-                <div className="bg-success py-3"></div>.
-                <div className="bg-white text-center">
-                    {/* 這邊放圖 */}
-                    <Image src={logo} alt="Subway" width={400} height={80}></Image>
+                <div className="topDeco py-2"></div>
+                <div className="bg-white">
+                    <div className="container-xl d-flex justify-content-center align-items-center py-3">
+                        {/* 這邊放圖 */}
+                        <Image src={logo} alt="Subway" width={400} height={80}></Image>
+                    </div>
                 </div>
             </div>
         </>

@@ -2,6 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+body {
+  min-width: 360px;
+}
+
+@media (max-width: 1200px) {
+  .container-subway {
+    max-width: 768px;
+  }
+}
+
+.topDeco {
+  background-color: #3b8642;
+}
+
 .goFresh {
   background-image: linear-gradient(110deg, #f2b700 56%, #008938 44%);
 }
@@ -10,15 +24,33 @@
   width: 45%;
 }
 
+@media (max-width: 1200px) {
+  .goFresh .textPart {
+    width: 100%;
+  }
+}
+
 .goFresh .textPart .textLarge {
   font-size: 80px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1;
+}
+
+@media (max-width: 540px) {
+  .goFresh .textPart .textLarge {
+    font-size: 50px;
+  }
 }
 
 .goFresh .textPart .textMiddle {
   font-size: 32px;
   font-weight: 600;
+}
+
+@media (max-width: 540px) {
+  .goFresh .textPart .textMiddle {
+    font-size: 24px;
+  }
 }
 
 .goFresh .textPart .qrCodePart {
@@ -35,8 +67,70 @@
   font-weight: 600;
 }
 
+@media (max-width: 1200px) {
+  .goFresh .textPart .go {
+    position: relative;
+  }
+  .goFresh .textPart .go::after {
+    position: absolute;
+    content: '';
+    width: 42.5px;
+    height: 50px;
+    left: 75%;
+    bottom: 0%;
+    background-color: transparent;
+    background-image: url("/img/note.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.goFresh .textPart .fresh {
+  position: relative;
+  display: inline-block;
+}
+
+.goFresh .textPart .fresh::after {
+  position: absolute;
+  content: '';
+  width: 85px;
+  height: 100px;
+  left: 110%;
+  bottom: 0%;
+  background-color: transparent;
+  background-image: url("/img/note.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .goFresh .textPart .fresh::after {
+    left: 0%;
+    top: 120%;
+  }
+}
+
+@media (max-width: 540px) {
+  .goFresh .textPart .fresh::after {
+    width: 56px;
+    height: 66px;
+  }
+}
+
 .goFresh .burgerPart {
   width: 55%;
+}
+
+.goFresh .burgerPart .md-burgerImg {
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
+  .goFresh .burgerPart {
+    width: 100%;
+  }
 }
 
 .step .textMiddle {

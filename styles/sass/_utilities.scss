@@ -1,0 +1,9 @@
+body {
+    min-width: 360px;
+}
+
+@media (max-width: 1200px) {
+    .container-subway {
+        max-width: 768px;
+    }
+}
