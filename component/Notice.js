@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logoW from '/img/logo-w.png'
+import logoW from 'public/img/logo-w.png'
 
 import { Button, ButtonGroup, Stack, HStack, VStack } from '@chakra-ui/react'
 

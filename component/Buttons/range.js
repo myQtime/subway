@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import knob from '/img/knob.png'
+import knob from 'public/img/knob.png'
 
 export default function range() {
     return (

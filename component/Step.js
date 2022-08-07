@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import tri from '/img/triangle.png'
+import tri from 'public/img/triangle.png'
 
 export default function Step() {
     return (
