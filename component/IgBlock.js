@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import phone from '../img/phone.png'
-import YupYup from '../img/people/YupYup.png'
-import Mories from '../img/people/Mories.png'
-import oneFloor from '../img/people/oneFloor.png'
+import phone from '/img/phone.png'
+import YupYup from '/img/people/YupYup.png'
+import Mories from '/img/people/Mories.png'
+import oneFloor from '/img/people/oneFloor.png'
 import { Button, ButtonGroup, Stack, HStack, VStack } from '@chakra-ui/react'
 
 export default function IgBlock() {

@@ -35,7 +35,7 @@
             transform: translateY(-50%);
             width: 32px;
             height: 32px;
-            background-image: url('/arrow.png');
+            background-image: url('/img/arrow.png');
             // background-color: red;
             // background: url('https://cdn-icons-png.flaticon.com/512/8183/8183047.png');
             background-size: contain;
@@ -51,7 +51,7 @@
             transform: translateY(-50%);
             width: 32px;
             height: 32px;
-            background: url(../../img/greenNote.png);
+            background: url('/img/greenNote.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50%;
@@ -104,7 +104,7 @@
             transform: translate(-50%, -50%);
             width: 20px;
             height: 20px;
-            background-image: url(../../img/play.png);
+            background-image: url('/img/play.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 70% 50%;
@@ -120,7 +120,7 @@
             transform: translate(-50%, -50%);
             width: 20px;
             height: 20px;
-            background-image: url(../../img/pause.png);
+            background-image: url('/img/pause.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%;
@@ -136,7 +136,7 @@
             transform: translate(-50%, -50%);
             width: 20px;
             height: 20px;
-            background-image: url(../../img/download.png);
+            background-image: url('/img/download.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%;
@@ -181,12 +181,12 @@
             background-color: #e9e9e9;
             background-size: contain;
             background-repeat: no-repeat;
-            background-image: url(../../img/volumnX.png);
+            background-image: url('/img/volumnX.png');
             z-index: -5;
         }
         &::-webkit-slider-thumb {
             appearance: none;
-            background: url(../../img/range.png);
+            background: url('/img/range.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
