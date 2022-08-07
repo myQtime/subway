@@ -43,7 +43,7 @@ export default function play() {
     return (
         <>
             <div className="play">
-                <div className="container-xl">
+                <div className="container-xl container-subway">
                     <div className="playTitle">
                         <div className="upper d-md-flex">
                             <div>
@@ -55,7 +55,7 @@ export default function play() {
                             <p className="secondText ms-5 ps-4">創造獨特口味</p>
                         </div>
                     </div>
-                    <div className="d-md-flex">
+                    <div className="d-flex flex-wrap">
                         <div className="leftPart d-flex flex-column container-fluid">
                             <div className="disk-ham">
                                 <div className="disk">

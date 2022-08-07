@@ -8,17 +8,17 @@ export default function GoFresh() {
             <div className="goFresh ">
                 <div className="container-xl container-subway  d-flex py-5">
                     <div className="textPart d-flex flex-column d-md-block">
-                        <p className="go textLarge text-white">GO!</p>
-                        <p className="fresh textLarge text-white">FRESH</p>
+                        <p className="go textLarge text-white mb-3">GO!</p>
+                        <p className="fresh textLarge text-white mb-3">FRESH</p>
                         {/* <span className="ms-3">
                             <Image src={note} />
                         </span> */}
-                        <div className="burgerPart d-flex d-xl-none align-items-center justify-content-end">
+                        <div className="burgerPart d-flex d-xl-none align-items-center justify-content-end mb-3">
                             <div className="md-burgerImg">
                                 <Image src={burger} />
                             </div>
                         </div>
-                        <p className="textLarge text-white">潛艇堡音樂DJ</p>
+                        <p className="textLarge text-white mb-2">潛艇堡音樂DJ</p>
                         <p className="textMiddle text-white">新鮮現做你的潛艇堡單曲</p>
                         <div className="qrCodePart d-none d-xl-flex">
                             <div>

@@ -1,5 +1,7 @@
-body {
+body,
+html {
     min-width: 360px;
+    overflow-x: auto;
 }
 
 @media (max-width: 1200px) {

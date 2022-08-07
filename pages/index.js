@@ -14,8 +14,8 @@ export default function home() {
     return (
         <div className="overflow-hidden">
             <Head>
-                <title>TRAVEL TAIWAN</title>
-                <meta name="description" content="TRAVEL TAIWAN" />
+                <title>SUBWAY</title>
+                <meta name="description" content="SUBWAY" />
                 <link rel="icon" href="/arrow.png" />
             </Head>
             <TopLogo />

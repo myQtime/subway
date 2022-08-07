@@ -2,8 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
-body {
+body,
+html {
   min-width: 360px;
+  overflow-x: auto;
 }
 
 @media (max-width: 1200px) {
@@ -124,7 +126,7 @@ body {
 }
 
 .goFresh .burgerPart .md-burgerImg {
-  width: 70%;
+  width: 85%;
 }
 
 @media (max-width: 1200px) {
@@ -397,7 +399,7 @@ body {
   width: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .leftPart {
     width: 100%;
   }
@@ -561,7 +563,7 @@ body {
   width: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .rightPart {
     width: 100%;
   }
