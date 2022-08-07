@@ -12,7 +12,7 @@ import YupYup from '../public/img/people/YupYup.png'
 import Mories from '../public/img/people/Mories.png'
 import oneFloor from '../public/img/people/oneFloor.png'
 
-import mayo from 'public/img/food/mayo.png'
+import mayo from '../public/img/food/mayo.png'
 
 export default function play() {
     const breadData = [
