@@ -5,14 +5,14 @@ import Controller from '../component/Buttons/controller'
 import PlayType from './Buttons/playType'
 import Range from './Buttons/range'
 import Food from './Buttons/food'
-import disk from '../img/disk.png'
-import ham from '../img/ham.png'
-import soundEffect from '../img/soundEffect.png'
-import YupYup from '../img/people/YupYup.png'
-import Mories from '../img/people/Mories.png'
-import oneFloor from '../img/people/oneFloor.png'
+import disk from '/img/disk.png'
+import ham from '/img/ham.png'
+import soundEffect from '/img/soundEffect.png'
+import YupYup from '/img/people/YupYup.png'
+import Mories from '/img/people/Mories.png'
+import oneFloor from '/img/people/oneFloor.png'
 
-import mayo from '../img/food/mayo.png'
+import mayo from '/img/food/mayo.png'
 
 export default function play() {
     const breadData = [

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import burger from '../img/burger.png'
-import note from '../img/note.png'
+import burger from '/img/burger.png'
+import note from '/img/note.png'
 
 export default function GoFresh() {
     return (

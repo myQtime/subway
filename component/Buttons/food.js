@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import mayo from '../../img/food/mayo.png'
+import mayo from '/img/food/mayo.png'
 
 export default function food(props) {
     const className = `foodName text-white text-center pe-none ${props.groupClass}`
