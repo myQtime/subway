@@ -16,7 +16,7 @@ export default function home() {
             <Head>
                 <title>TRAVEL TAIWAN</title>
                 <meta name="description" content="TRAVEL TAIWAN" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/arrow.png" />
             </Head>
             <TopLogo />
             <GoFresh />
