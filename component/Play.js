@@ -55,7 +55,7 @@ export default function play() {
                             <p className="secondText ms-5 ps-4">創造獨特口味</p>
                         </div>
                     </div>
-                    <div className="d-flex flex-wrap">
+                    <div className="d-flex flex-wrap  flex-xl-nowrap">
                         <div className="leftPart d-flex flex-column container-fluid">
                             <div className="disk-ham">
                                 <div className="disk">
