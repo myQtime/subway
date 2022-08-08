@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
 .IgBlock {
     background-color: #f2b700;
     .leftPart {
@@ -22,18 +20,15 @@
 
     .typeSelectPC {
         .IgBlockTitle {
-            font-family: 'Noto Sans TC', sans-serif;
             font-size: 48px;
             font-weight: 700;
         }
         .IgBlockSubTitle {
-            font-family: 'Noto Sans TC', sans-serif;
             font-size: 30px;
             font-weight: 700;
             color: #108e4b;
         }
         .IgBlockText {
-            font-family: 'Noto Sans TC', sans-serif;
             font-size: 20px;
             font-weight: 700;
             color: #555555;
@@ -42,18 +37,15 @@
 
     .typeSelectMd {
         .IgBlockTitle {
-            font-family: 'Noto Sans TC', sans-serif;
             font-size: 24px;
             font-weight: 700;
         }
         .IgBlockSubTitle {
-            font-family: 'Noto Sans TC', sans-serif;
             font-size: 18px;
             font-weight: 700;
             color: #108e4b;
         }
         .IgBlockText {
-            font-family: 'Noto Sans TC', sans-serif;
             font-size: 16px;
             font-weight: 700;
             color: #555555;
@@ -95,12 +87,10 @@
         font-weight: 700;
         color: #068e45;
     }
-    .peopleList {
+    .peopleIGList {
         list-style: none;
         width: 90%;
-        li {
-            padding: 0px 15px;
-        }
+
         @media (max-width: 768px) {
             width: 100%;
         }

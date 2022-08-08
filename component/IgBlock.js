@@ -112,22 +112,22 @@ export default function IgBlock() {
                                 </Button>
                             </Stack>
                         </div>
-                        <p className="musicText text-center text-md-start mt-4">選擇{musicType}曲風 代表人物</p>
-                        <ul className="d-flex peopleList justify-content-center justify-content-md-start mt-3">
+                        <p className="musicText text-center text-md-start mt-4">選擇 {musicType} 曲風 代表人物</p>
+                        <ul className="d-flex peopleIGList justify-content-center justify-content-md-start mt-3">
                             <li hidden={musicType === 'LIP HOP' || musicType === 'ROCK'}>
-                                <div className="d-flex flex-column align-items-center">
+                                <div className="d-flex flex-column align-items-center mx-3">
                                     <Image src={YupYup} width={145} height={145} />
                                     <p>牙牙</p>
                                 </div>
                             </li>
                             <li hidden={musicType === 'JAZZ' || musicType === 'ROCK'}>
-                                <div className="d-flex flex-column align-items-center">
+                                <div className="d-flex flex-column align-items-center mx-3">
                                     <Image src={Mories} width={145} height={145} />
                                     <p>Mories</p>
                                 </div>
                             </li>
                             <li hidden={musicType === 'JAZZ'}>
-                                <div className="d-flex flex-column align-items-center">
+                                <div className="d-flex flex-column align-items-center mx-3">
                                     <Image src={oneFloor} width={145} height={145} />
                                     <p>一樓</p>
                                 </div>
