@@ -15,7 +15,7 @@ export default function IgBlock() {
                     <div className="leftPart d-flex justify-content-xl-end ">
                         <div className="phone d-flex justify-content-end align-items-center px-2 px-sm-3">
                             <div>
-                                <Image src={phone} width={300} height={590} />
+                                <Image src={phone} width={300} height={590} draggable="false" />
                             </div>
                         </div>
                         <div className="typeSelectMd d-block d-xl-none w-50 px-2 px-sm-3">
@@ -118,19 +118,19 @@ export default function IgBlock() {
                         <ul className="d-flex peopleIGList justify-content-center justify-content-xl-start mt-3">
                             <li hidden={musicType === 'LIP HOP' || musicType === 'ROCK'}>
                                 <div className="d-flex flex-column align-items-center mx-3">
-                                    <Image src={YupYup} width={145} height={145} />
+                                    <Image src={YupYup} width={145} height={145} draggable="false" />
                                     <p>牙牙</p>
                                 </div>
                             </li>
                             <li hidden={musicType === 'JAZZ' || musicType === 'ROCK'}>
                                 <div className="d-flex flex-column align-items-center mx-3">
-                                    <Image src={Mories} width={145} height={145} />
+                                    <Image src={Mories} width={145} height={145} draggable="false" />
                                     <p>Mories</p>
                                 </div>
                             </li>
                             <li hidden={musicType === 'JAZZ'}>
                                 <div className="d-flex flex-column align-items-center mx-3">
-                                    <Image src={oneFloor} width={145} height={145} />
+                                    <Image src={oneFloor} width={145} height={145} draggable="false" />
                                     <p>一樓</p>
                                 </div>
                             </li>

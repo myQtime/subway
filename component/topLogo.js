@@ -9,7 +9,7 @@ export default function topLogo() {
                 <div className="bg-white">
                     <div className="container-xl d-flex justify-content-center align-items-center py-3">
                         {/* 這邊放圖 */}
-                        <Image src={logo} alt="Subway" width={400} height={80}></Image>
+                        <Image src={logo} alt="Subway" width={400} height={80} draggable="false"></Image>
                     </div>
                 </div>
             </div>

@@ -12,11 +12,11 @@ export default function Step() {
                     </div>
 
                     <div className="triGroup d-flex justify-content-start justify-content-xl-center mt-3 ms-5 me-3">
-                        <Image src={tri} width={15} height={21} quality={100} />
-                        <Image src={tri} width={15} height={21} quality={100} hidden />
-                        <Image src={tri} width={15} height={21} quality={100} />
-                        <Image src={tri} width={15} height={21} quality={100} hidden />
-                        <Image src={tri} width={15} height={21} quality={100} />
+                        <Image src={tri} width={15} height={21} quality={100} draggable="false" />
+                        <Image src={tri} width={15} height={21} quality={100} hidden draggable="false" />
+                        <Image src={tri} width={15} height={21} quality={100} draggable="false" />
+                        <Image src={tri} width={15} height={21} quality={100} hidden draggable="false" />
+                        <Image src={tri} width={15} height={21} quality={100} draggable="false" />
                     </div>
 
                     <ul className="step123 d-xl-flex justify-content-xl-around text-xl-center mt-5">

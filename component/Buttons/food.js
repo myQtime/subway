@@ -41,7 +41,7 @@ export default function food(props) {
                                       setActive(e)
                                   }}
                               >
-                                  <Image src={item.src} quality={100} className="rounded-4" />
+                                  <Image src={item.src} quality={100} className="rounded-4" draggable="false" />
                                   <div className={className}>{item.name}</div>
                               </div>
                           ))

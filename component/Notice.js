@@ -10,14 +10,13 @@ export default function Notice() {
     return (
         <>
             <div className="notice">
-                <div className="container-xl">
-                    <div className="logo-w text-center border-bottom border-5 border-white">
+                <div className="container-xl container-subway py-5">
+                    <div className="logo-w text-center border-bottom border-5 border-white pb-5">
                         {/* 這邊放圖 */}
-                        <Image src={logoW} alt="Subway" width={400} height={80}></Image>
+                        <Image src={logoW} alt="Subway" draggable="false" width={400} height={80}></Image>
                     </div>
-                    <div className="noticeTitle text-center text-white">利用SUBWAY 音樂創作 IG REELS</div>
-                    <div className="makeMusic d-flex justify-content-center">
-                        {' '}
+                    <div className="noticeTitle text-center text-white py-4">利用SUBWAY 音樂創作 IG REELS</div>
+                    <div className="makeMusic d-flex justify-content-center mt-3 mb-5">
                         <Button className="makeMusic-Btn" size="md" px={20} onClick={makeMusic}>
                             開始製作
                         </Button>

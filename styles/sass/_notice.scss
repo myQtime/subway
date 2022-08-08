@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
 .notice {
     background-color: #008938;
     .noticeTitle {
-        font-family: 'Noto Sans TC', sans-serif;
         font-size: 28px;
         font-weight: 700;
+    }
+    .noticeText {
+        font-size: 14px;
+        line-height: 1.8;
+        @media (max-width: 540px) {
+            font-size: 12px;
+        }
     }
 
     .makeMusic-Btn {

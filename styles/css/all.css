@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 body,
 html {
   min-width: 360px;
@@ -764,9 +763,19 @@ html {
 }
 
 .notice .noticeTitle {
-  font-family: 'Noto Sans TC', sans-serif;
   font-size: 28px;
   font-weight: 700;
+}
+
+.notice .noticeText {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 540px) {
+  .notice .noticeText {
+    font-size: 12px;
+  }
 }
 
 .notice .makeMusic-Btn {
