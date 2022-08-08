@@ -11,19 +11,21 @@ export default function IgBlock() {
     return (
         <>
             <div className="IgBlock">
-                <div className="container-xl py-5 d-flex justify-content-between flex-column flex-md-row">
-                    <div className="leftPart d-flex justify-content-md-end ">
-                        <div className="phone me-3">
-                            <Image src={phone} width={300} height={590} />
+                <div className="container-xl container-subway py-5 d-flex justify-content-between flex-column flex-xl-row">
+                    <div className="leftPart d-flex justify-content-xl-end ">
+                        <div className="phone d-flex justify-content-end align-items-center px-2 px-sm-3">
+                            <div>
+                                <Image src={phone} width={300} height={590} />
+                            </div>
                         </div>
-                        <div className="typeSelectMd d-block d-md-none w-50">
+                        <div className="typeSelectMd d-block d-xl-none w-50 px-2 px-sm-3">
                             <p className="text-white IgBlockTitle mt-2">新鮮現做</p>
                             <p className="IgBlockSubTitle mt-2">
                                 不只好吃
                                 <br />
                                 還能朗朗上口
                             </p>
-                            <p className="IgBlockText mt-2">
+                            <p className="IgBlockText my-2">
                                 由我示範給你看，
                                 <br />
                                 請選擇你喜歡的曲風
@@ -68,8 +70,8 @@ export default function IgBlock() {
                             </Stack>
                         </div>
                     </div>
-                    <div className="rightPart d-flex flex-column align-items-md-start ">
-                        <div className="typeSelectPC d-none d-md-block w-100">
+                    <div className="rightPart d-flex flex-column align-items-xl-start ">
+                        <div className="typeSelectPC d-none d-xl-block w-100">
                             <p className="text-white IgBlockTitle mt-3">新鮮現做</p>
                             <p className="IgBlockSubTitle mt-3">不只好吃 還能朗朗上口</p>
                             <p className="IgBlockText mt-3">由我示範給你看，請選擇你喜歡的曲風</p>
@@ -112,8 +114,8 @@ export default function IgBlock() {
                                 </Button>
                             </Stack>
                         </div>
-                        <p className="musicText text-center text-md-start mt-4">選擇 {musicType} 曲風 代表人物</p>
-                        <ul className="d-flex peopleIGList justify-content-center justify-content-md-start mt-3">
+                        <p className="musicText text-center text-xl-start mt-4">選擇 {musicType} 曲風 代表人物</p>
+                        <ul className="d-flex peopleIGList justify-content-center justify-content-xl-start mt-3">
                             <li hidden={musicType === 'LIP HOP' || musicType === 'ROCK'}>
                                 <div className="d-flex flex-column align-items-center mx-3">
                                     <Image src={YupYup} width={145} height={145} />

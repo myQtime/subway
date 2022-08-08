@@ -145,6 +145,10 @@
     .redoBtn {
         font-family: 'Noto Sans TC', sans-serif;
         font-weight: 700;
+        width: 50%;
+        @media (max-width: 1200px) {
+            width: 40%;
+        }
     }
 }
 
@@ -169,7 +173,25 @@
         height: 100%;
         appearance: none;
         position: relative;
+        background-color: transparent;
         z-index: 5;
+        @media (max-width: 1200px) {
+            transform: rotate(90deg);
+            &::before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 0%;
+                transform: translate(0%, 0%);
+                width: 100%;
+                height: 100%;
+                background-color: #e9e9e9;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url('/img/volumnX.png');
+                z-index: -5;
+            }
+        }
         &::before {
             position: absolute;
             content: '';

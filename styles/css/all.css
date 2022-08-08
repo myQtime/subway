@@ -279,13 +279,13 @@ html {
   width: 40%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .leftPart {
     width: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .leftPart .phone {
     width: 50%;
   }
@@ -295,7 +295,7 @@ html {
   width: 55%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .rightPart {
     width: 100%;
   }
@@ -319,20 +319,32 @@ html {
 }
 
 .IgBlock .typeSelectMd .IgBlockTitle {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
 }
 
 .IgBlock .typeSelectMd .IgBlockSubTitle {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 700;
   color: #108e4b;
 }
 
 .IgBlock .typeSelectMd .IgBlockText {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: #555555;
+}
+
+@media (max-width: 540px) {
+  .IgBlock .typeSelectMd .IgBlockTitle {
+    font-size: 24px;
+  }
+  .IgBlock .typeSelectMd .IgBlockSubTitle {
+    font-size: 18px;
+  }
+  .IgBlock .typeSelectMd .IgBlockText {
+    font-size: 16px;
+  }
 }
 
 .IgBlock .musicBtn {
@@ -342,7 +354,7 @@ html {
   color: #555555;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .musicBtn {
     width: 80%;
   }
@@ -360,7 +372,7 @@ html {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .musicBtn-active {
     width: 80%;
   }
@@ -371,14 +383,13 @@ html {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .musicBtn-active:hover {
     width: 80%;
   }
 }
 
 .IgBlock .musicText {
-  font-family: 'Noto Sans TC', sans-serif;
   font-size: 28px;
   font-weight: 700;
   color: #068e45;
@@ -389,7 +400,7 @@ html {
   width: 90%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .IgBlock .peopleIGList {
     width: 100%;
   }
@@ -565,6 +576,13 @@ html {
 .controller .redoBtn {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .controller .redoBtn {
+    width: 40%;
+  }
 }
 
 .playType button {
@@ -590,7 +608,30 @@ html {
      -moz-appearance: none;
           appearance: none;
   position: relative;
+  background-color: transparent;
   z-index: 5;
+}
+
+@media (max-width: 1200px) {
+  .range .rangeBtn {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .range .rangeBtn::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9e9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/img/volumnX.png");
+    z-index: -5;
+  }
 }
 
 .range .rangeBtn::before {

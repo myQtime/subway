@@ -4,7 +4,13 @@ export default function controller() {
     return (
         <>
             <div className="controller">
-                <Stack spacing={4} direction="row" align="center" w="100%" className="mt-3 justify-content-between">
+                <Stack
+                    spacing={4}
+                    direction="row"
+                    align="center"
+                    w="100%"
+                    className="mt-3 justify-content-around justify-content-xl-between px-0 px-sm-3 px-xl-0"
+                >
                     <Button
                         className="rounded-circle playBtn"
                         size="md"
@@ -29,7 +35,6 @@ export default function controller() {
                     <Button
                         className="rounded-pill redoBtn text-white"
                         size="md"
-                        w="50%"
                         onClick={() => {
                             alert('重新製作')
                         }}

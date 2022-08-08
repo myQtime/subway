@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 
 import Controller from '../component/Buttons/controller'
 import PlayType from './Buttons/playType'
-import Range from './Buttons/range'
 import Food from './Buttons/food'
 import disk from '../public/img/disk.png'
 import ham from '../public/img/ham.png'
@@ -11,8 +10,9 @@ import soundEffect from '../public/img/soundEffect.png'
 import YupYup from '../public/img/people/YupYup.png'
 import Mories from '../public/img/people/Mories.png'
 import oneFloor from '../public/img/people/oneFloor.png'
-
 import mayo from '../public/img/food/mayo.png'
+
+import knob from '../public/img/knob.png'
 
 export default function play() {
     const breadData = [
@@ -43,8 +43,8 @@ export default function play() {
     return (
         <>
             <div className="play">
-                <div className="container-xl container-subway">
-                    <div className="playTitle">
+                <div className="container-xl container-subway py-5">
+                    <div className="playTitle ">
                         <div className="upper d-md-flex">
                             <div>
                                 <p className="firstText">秀出自己的風格</p>
@@ -57,7 +57,18 @@ export default function play() {
                     </div>
                     <div className="d-flex flex-wrap  flex-xl-nowrap">
                         <div className="leftPart d-flex flex-column container-fluid">
-                            <div className="disk-ham">
+                            <div className="disk-ham d-flex">
+                                {/* <div className="range d-block d-xl-none mt-4">
+                                    <input
+                                        className="rangeBtn"
+                                        type="range"
+                                        min="0"
+                                        max="10"
+                                        step="1"
+                                        defaultValue="1"
+                                        orient="vertical"
+                                    />
+                                </div> */}
                                 <div className="disk">
                                     <Image src={disk} layout="intrinsic" quality={100} />
                                 </div>
@@ -65,13 +76,29 @@ export default function play() {
                                     <Image src={ham} layout="intrinsic" quality={100} />
                                 </div>
                             </div>
-                            <div className="soundEffect w-100">
-                                <Image src={soundEffect} quality={100} />
+                            <div className="soundEffect w-100 d-flex">
+                                <div className="knob d-xl-none">
+                                    <Image src={knob} layout="intrinsic" quality={100} />
+                                </div>
+                                <div className="mx-3 mx-xl-0">
+                                    <Image src={soundEffect} quality={100} />
+                                </div>
+                                <div className="knob d-xl-none">
+                                    <Image src={knob} layout="intrinsic" quality={100} />
+                                </div>
                             </div>
 
                             <Controller />
                             <PlayType />
-                            <Range />
+                            <div className="range w-100 d-xl-flex d-none d-xl-block justify-content-between align-items-center mt-4">
+                                <input className="rangeBtn" type="range" min="0" max="10" step="1" defaultValue="1" />
+                                <div className="knob">
+                                    <Image src={knob} layout="intrinsic" quality={100} />
+                                </div>
+                                <div className="knob">
+                                    <Image src={knob} layout="intrinsic" quality={100} />
+                                </div>
+                            </div>
                         </div>
                         <div className="rightPart container-fluid">
                             <ul className="d-flex peopleList justify-content-center justify-content-md-center mt-3">
