@@ -9,6 +9,11 @@ html {
   cursor: default;
 }
 
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  list-style: none;
+}
+
 @media (max-width: 1200px) {
   .container-subway {
     max-width: 768px;
@@ -136,17 +141,63 @@ html {
   }
 }
 
+.step .stepLine {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .step .stepLine::after {
+    position: absolute;
+    content: '';
+    border-left: 8px solid #f1b71c;
+    height: 100%;
+    top: 0%;
+    left: 2%;
+  }
+}
+
+.step .stepTitle {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .step .stepTitle::after {
+    position: absolute;
+    content: '';
+    border: 8px solid #008938;
+    width: 20px;
+    height: 20px;
+    background-color: #008938;
+    border-radius: 50%;
+    left: 2%;
+    top: 50%;
+    -webkit-transform: translateX(-30%) translateY(-50%);
+            transform: translateX(-30%) translateY(-50%);
+    z-index: 50;
+  }
+}
+
 .step .textMiddle {
-  font-family: 'Noto Sans TC', sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #008938;
 }
 
+@media (max-width: 540px) {
+  .step .textMiddle {
+    font-size: 22px;
+  }
+}
+
 .step .step123 {
   position: relative;
   width: 80%;
-  list-style: none;
+}
+
+@media (max-width: 1200px) {
+  .step .step123 {
+    width: 100%;
+  }
 }
 
 .step .step123 .number {
@@ -158,15 +209,26 @@ html {
 .step .step123 .stepText {
   margin-top: -10px;
   height: 40%;
-}
-
-.step .step123 p {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 1.8;
 }
 
-.step .step123 p span {
+.step .step123 .stepText span {
   color: #008938;
+}
+
+@media (max-width: 1200px) {
+  .step .step123 .stepText {
+    margin-top: 0px;
+    height: 40%;
+  }
+}
+
+@media (max-width: 540px) {
+  .step .step123 .stepText {
+    font-size: 14px;
+  }
 }
 
 .step .step123::after {
@@ -174,6 +236,12 @@ html {
   content: '';
   border-top: 8px solid #f1b71c;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .step .step123::after {
+    content: none;
+  }
 }
 
 .step .step123 li {
@@ -193,6 +261,15 @@ html {
   -webkit-transform: translateX(-50%) translateY(-25%);
           transform: translateX(-50%) translateY(-25%);
   z-index: 50;
+}
+
+@media (max-width: 1200px) {
+  .step .step123 li::after {
+    left: 2%;
+    top: 50%;
+    -webkit-transform: translateX(-30%) translateY(-50%);
+            transform: translateX(-30%) translateY(-50%);
+  }
 }
 
 .IgBlock {

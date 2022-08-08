@@ -1,16 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
 .step {
+    .stepLine {
+        position: relative;
+        @media (max-width: 1200px) {
+            &::after {
+                position: absolute;
+                content: '';
+                border-left: 8px solid #f1b71c;
+                height: 100%;
+                top: 0%;
+                left: 2%;
+            }
+        }
+    }
+
+    .stepTitle {
+        position: relative;
+        &::after {
+            @media (max-width: 1200px) {
+                position: absolute;
+                content: '';
+                border: 8px solid #008938;
+                width: 20px;
+                height: 20px;
+                background-color: #008938;
+                border-radius: 50%;
+                left: 2%;
+                top: 50%;
+                transform: translateX(-30%) translateY(-50%);
+                z-index: 50;
+            }
+        }
+    }
+
     .textMiddle {
-        font-family: 'Noto Sans TC', sans-serif;
         font-size: 32px;
         font-weight: 700;
         color: #008938;
+        @media (max-width: 540px) {
+            font-size: 22px;
+        }
     }
     .step123 {
         position: relative;
         width: 80%;
-        list-style: none;
+        @media (max-width: 1200px) {
+            width: 100%;
+        }
         .number {
             font-size: 80px;
             font-weight: 900;
@@ -19,12 +54,18 @@
         .stepText {
             margin-top: -10px;
             height: 40%;
-        }
-        p {
-            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 20px;
             font-weight: 400;
+            line-height: 1.8;
             span {
                 color: #008938;
+            }
+            @media (max-width: 1200px) {
+                margin-top: 0px;
+                height: 40%;
+            }
+            @media (max-width: 540px) {
+                font-size: 14px;
             }
         }
 
@@ -33,6 +74,10 @@
             content: '';
             border-top: 8px solid #f1b71c;
             width: 100%;
+
+            @media (max-width: 1200px) {
+                content: none;
+            }
         }
         li {
             position: relative;
@@ -48,6 +93,11 @@
                 top: 0;
                 transform: translateX(-50%) translateY(-25%);
                 z-index: 50;
+                @media (max-width: 1200px) {
+                    left: 2%;
+                    top: 50%;
+                    transform: translateX(-30%) translateY(-50%);
+                }
             }
         }
     }

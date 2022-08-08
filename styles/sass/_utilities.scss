@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
 body,
 html {
     min-width: 360px;
     overflow-x: auto;
     cursor: default;
+}
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    list-style: none;
 }
 
 @media (max-width: 1200px) {

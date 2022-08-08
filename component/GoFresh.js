@@ -19,7 +19,7 @@ export default function GoFresh() {
                             </div>
                         </div>
                         <p className="textLarge text-white mb-2">潛艇堡音樂DJ</p>
-                        <p className="textMiddle text-white">新鮮現做你的潛艇堡單曲</p>
+                        <p className="textMiddle text-white mb-2">新鮮現做你的潛艇堡單曲</p>
                         <div className="qrCodePart d-none d-xl-flex">
                             <div>
                                 <Image src={note} layout="fixed" />
