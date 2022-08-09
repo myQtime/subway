@@ -696,8 +696,8 @@ html {
 
 @media (max-width: 768px) {
   .range-vertical .rangeBtn::before {
-    -webkit-transform: translate(0%, -26%);
-            transform: translate(0%, -26%);
+    -webkit-transform: translate(0%, -27%);
+            transform: translate(0%, -27%);
   }
 }
 
