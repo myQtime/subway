@@ -68,6 +68,9 @@
         position: relative;
         .disk {
             width: 45%;
+            @media (max-width: 1200px) {
+                margin-left: -15%;
+            }
         }
         .ham {
             position: absolute;
@@ -75,10 +78,16 @@
             top: 50%;
             left: 100%;
             transform: translate(-100%, -60%);
+            @media (max-width: 1200px) {
+                transform: translate(-75%, -60%);
+            }
         }
     }
     .soundEffect {
         margin-top: -15px;
+        @media (max-width: 1200px) {
+            margin-top: 0px;
+        }
     }
 }
 
@@ -87,7 +96,6 @@
         // background: linear-gradient(to bottom, #007b32 20%, #008938 80%, #0e8f43 100%);
         background-color: #008938;
         box-shadow: 2px 2px 5px #00af46 inset, -2px -2px 5px #006b2d inset, 0px 5px 5px #d6d6d6;
-        // box-shadow: 0px 5px 5px #d6d6d6;
         &:hover {
             // background: linear-gradient(to bottom, #007b32 20%, #008938 80%, #0e8f43 100%);
             background-color: #008938;
@@ -154,7 +162,6 @@
 
 .playType {
     button {
-        font-family: 'Noto Sans TC', sans-serif;
         font-weight: 700;
         color: #008938;
         background-color: #f2b701;
@@ -175,23 +182,7 @@
         position: relative;
         background-color: transparent;
         z-index: 5;
-        @media (max-width: 1200px) {
-            transform: rotate(90deg);
-            &::before {
-                position: absolute;
-                content: '';
-                top: 50%;
-                left: 0%;
-                transform: translate(0%, 0%);
-                width: 100%;
-                height: 100%;
-                background-color: #e9e9e9;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-image: url('/img/volumnX.png');
-                z-index: -5;
-            }
-        }
+
         &::before {
             position: absolute;
             content: '';
@@ -207,7 +198,7 @@
             z-index: -5;
         }
         &::-webkit-slider-thumb {
-            appearance: none;
+            -webkit-appearance: none;
             background: url('/img/range.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -219,6 +210,59 @@
     }
     .knob {
         width: 20%;
+    }
+}
+
+.range-vertical {
+    width: 40%;
+    transform: rotate(270deg);
+    margin-left: -10%;
+
+    .rangeBtn {
+        width: 100%;
+        // height: 100%;
+        appearance: none;
+        position: relative;
+        background-color: transparent;
+        z-index: 5;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 0%;
+            transform: translate(0%, -30%);
+            width: 100%;
+            height: 50%;
+            background-color: #e9e9e9;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('/img/volumnY.png');
+            z-index: -5;
+            @media (max-width: 768px) {
+                transform: translate(0%, -26%);
+            }
+            @media (max-width: 540px) {
+                transform: translate(0%, -25%);
+            }
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-image: url('/img/range.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+            @media (max-width: 768px) {
+                width: 25px;
+                height: 25px;
+            }
+            @media (max-width: 540px) {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }
 
@@ -236,7 +280,6 @@
     .intro {
         position: relative;
         background: #008938;
-        font-family: 'Noto Sans TC', sans-serif;
         font-size: 16px;
         z-index: 5;
         &::after {
@@ -262,7 +305,6 @@
     }
     .foodGroupText {
         background-color: #919191;
-        font-family: 'Noto Sans TC', sans-serif;
         font-size: 16px;
         font-weight: 400;
     }
@@ -285,7 +327,6 @@
         width: 100%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        font-family: 'Noto Sans TC', sans-serif;
         font-size: 12px;
         font-weight: 400;
         opacity: 0;
@@ -296,7 +337,6 @@
 }
 
 .moreChoice {
-    font-family: 'Noto Sans TC', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #008938;

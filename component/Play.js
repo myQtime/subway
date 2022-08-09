@@ -57,8 +57,8 @@ export default function play() {
                     </div>
                     <div className="d-flex flex-wrap  flex-xl-nowrap">
                         <div className="leftPart d-flex flex-column container-fluid">
-                            <div className="disk-ham d-flex">
-                                {/* <div className="range d-block d-xl-none mt-4">
+                            <div className="disk-ham d-flex  mb-4 mb-xl-0">
+                                <div className="range-vertical d-flex d-xl-none justify-content-center">
                                     <input
                                         className="rangeBtn"
                                         type="range"
@@ -68,7 +68,7 @@ export default function play() {
                                         defaultValue="1"
                                         orient="vertical"
                                     />
-                                </div> */}
+                                </div>
                                 <div className="disk">
                                     <Image src={disk} layout="intrinsic" quality={100} draggable="false" />
                                 </div>
