@@ -45,7 +45,7 @@ export default function play() {
         { src: main4, name: '火腿', id: 'ham' },
     ]
     const vegeData = [
-        { src: veg1, name: '生菜', id: 'lettuce' },
+        { src: veg1, name: '生菜', id: 'lettuces' },
         { src: veg2, name: '番茄', id: 'tomato' },
         { src: veg3, name: '洋蔥', id: 'onion' },
         { src: veg4, name: '醃製物', id: 'pickled' },
