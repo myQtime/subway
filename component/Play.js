@@ -12,31 +12,49 @@ import Mories from '../public/img/people/Mories.png'
 import oneFloor from '../public/img/people/oneFloor.png'
 import mayo from '../public/img/food/mayo.png'
 import knob from '../public/img/knob.png'
+import bread1 from '../public/img/food/bread-1.png'
+import bread2 from '../public/img/food/bread-2.png'
+import bread3 from '../public/img/food/bread-3.png'
+import bread4 from '../public/img/food/bread-4.png'
 
+import main1 from '../public/img/food/main-1.png'
+import main2 from '../public/img/food/main-2.png'
+import main3 from '../public/img/food/main-3.png'
+import main4 from '../public/img/food/main-4.png'
+
+import veg1 from '../public/img/food/veg-1.png'
+import veg2 from '../public/img/food/veg-2.png'
+import veg3 from '../public/img/food/veg-3.png'
+import veg4 from '../public/img/food/veg-4.png'
+
+import sauce1 from '../public/img/food/sauce-1.png'
+import sauce2 from '../public/img/food/sauce-2.png'
+import sauce3 from '../public/img/food/sauce-3.png'
+import sauce4 from '../public/img/food/sauce-4.png'
 export default function play() {
     const breadData = [
-        { src: require('../public/img/food/bread-1.png'), name: '蜂蜜燕麥', id: 'Honey Oatmeal' },
-        { src: require('../public/img/food/bread-2.png'), name: '小麥麵包', id: 'Wheat' },
-        { src: require('../public/img/food/bread-3.png'), name: '巴馬乾酪麵包', id: 'Parmesan Oregano' },
-        { src: require('../public/img/food/bread-4.png'), name: '白麵包', id: 'White' },
+        { src: bread1, name: '蜂蜜燕麥', id: 'Honey Oatmeal' },
+        { src: bread2, name: '小麥麵包', id: 'Wheat' },
+        { src: bread3, name: '巴馬乾酪麵包', id: 'Parmesan Oregano' },
+        { src: bread4, name: '白麵包', id: 'White' },
     ]
     const meatData = [
-        { src: require('../public/img/food/main-1.png'), name: '嫩切牛肉', id: 'beed' },
-        { src: require('../public/img/food/main-2.png'), name: '香烤雞肉', id: 'chicken' },
-        { src: require('../public/img/food/main-3.png'), name: '義大利牛肉丸', id: 'meat ball' },
-        { src: require('../public/img/food/main-4.png'), name: '火腿', id: 'ham' },
+        { src: main1, name: '嫩切牛肉', id: 'beed' },
+        { src: main2, name: '香烤雞肉', id: 'chicken' },
+        { src: main3, name: '義大利牛肉丸', id: 'meat ball' },
+        { src: main4, name: '火腿', id: 'ham' },
     ]
     const vegeData = [
-        { src: require('../public/img/food/veg-1.png'), name: '生菜', id: 'lettuce' },
-        { src: require('../public/img/food/veg-2.png'), name: '番茄', id: 'tomato' },
-        { src: require('../public/img/food/veg-3.png'), name: '洋蔥', id: 'onion' },
-        { src: require('../public/img/food/veg-4.png'), name: '醃製物', id: 'pickled' },
+        { src: veg1, name: '生菜', id: 'lettuce' },
+        { src: veg2, name: '番茄', id: 'tomato' },
+        { src: veg3, name: '洋蔥', id: 'onion' },
+        { src: veg4, name: '醃製物', id: 'pickled' },
     ]
     const sauceData = [
-        { src: require('../public/img/food/sauce-1.png'), name: '紅酒醬', id: 'red wine' },
-        { src: require('../public/img/food/sauce-2.png'), name: '蜂蜜芥末醬', id: 'honey mustard' },
-        { src: require('../public/img/food/sauce-3.png'), name: '黃芥末醬', id: 'yellow mustard' },
-        { src: require('../public/img/food/sauce-4.png'), name: '千島醬', id: 'Thousand Island dressing' },
+        { src: sauce1, name: '紅酒醬', id: 'red wine' },
+        { src: sauce2, name: '蜂蜜芥末醬', id: 'honey mustard' },
+        { src: sauce3, name: '黃芥末醬', id: 'yellow mustard' },
+        { src: sauce4, name: '千島醬', id: 'Thousand Island dressing' },
     ]
 
     return (
