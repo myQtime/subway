@@ -1,0 +1,55 @@
+.description {
+    background-color: #f2b700;
+    .descripTitle {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .descripSubTitle {
+        font-size: 28px;
+        font-weight: 700;
+        color: #108e4b;
+    }
+
+    .tag {
+        width: 30%;
+        background-color: #108e4b;
+    }
+
+    .eventDescrip {
+        span {
+            color: #008938;
+        }
+    }
+
+    .innerBlock {
+        height: 100%;
+        width: 70%;
+        @media (min-width: 1200px) {
+            width: 90%;
+        }
+        .innerText {
+            span {
+                color: #008938;
+            }
+        }
+    }
+
+    .topPart {
+        width: 85%;
+        .tag {
+            @media (min-width: 1200px) {
+                width: 15%;
+            }
+        }
+    }
+    .belowPart {
+        width: 85%;
+        .eventAward,
+        .winningNotice {
+            width: 90%;
+            @media (min-width: 1200px) {
+                width: 50%;
+            }
+        }
+    }
+}

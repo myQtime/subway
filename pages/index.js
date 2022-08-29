@@ -4,12 +4,10 @@ import TopLogo from '../component/topLogo'
 import GoFresh from '../component/GoFresh'
 import Step from '../component/Step'
 import Footer from '../component/Footer'
-import IgBlock from '../component/IgBlock'
+import Description from '../component/Description'
 import Play from '../component/Play'
 import Notice from '../component/Notice'
 
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import { Stack, HStack, VStack } from '@chakra-ui/react'
 export default function home() {
     return (
         <div className="overflow-hidden">
@@ -21,7 +19,7 @@ export default function home() {
             <TopLogo />
             <GoFresh />
             <Step />
-            <IgBlock />
+            <Description />
             <Play />
             <Notice />
             <Footer />

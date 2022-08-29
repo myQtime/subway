@@ -36,10 +36,10 @@ export default function controller() {
                         className="rounded-pill redoBtn text-white"
                         size="md"
                         onClick={() => {
-                            alert('重新製作')
+                            alert('用此音樂拍攝Reels')
                         }}
                     >
-                        重新製作
+                        用此音樂拍攝Reels
                     </Button>
                 </Stack>
             </div>

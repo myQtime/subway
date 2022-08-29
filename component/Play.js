@@ -106,7 +106,7 @@ export default function play() {
                             </div>
 
                             <Controller />
-                            <PlayType />
+                            {/* <PlayType /> */}
                             <div className="range w-100 d-xl-flex d-none d-xl-block justify-content-between align-items-center mt-4">
                                 <input className="rangeBtn" type="range" min="0" max="10" step="1" defaultValue="1" />
                                 <div className="knob">
@@ -118,7 +118,7 @@ export default function play() {
                             </div>
                         </div>
                         <div className="rightPart container-fluid">
-                            <ul className="d-flex peopleList justify-content-center justify-content-md-center mt-3">
+                            {/* <ul className="d-flex peopleList justify-content-center justify-content-md-center mt-3">
                                 <li className="mx-2">
                                     <div className="d-flex flex-column align-items-center">
                                         <Image src={YupYup} draggable="false" />
@@ -140,7 +140,7 @@ export default function play() {
                             </ul>
                             <div className="intro text-center text-white rounded-pill mt-4">
                                 點選你愛的KOL，可以套用專屬於他的曲風音樂，由你進行改造。
-                            </div>
+                            </div> */}
                             <div className="d-flex justify-content-between">
                                 <Food data={breadData} group="麵包" groupClass="bread" />
                                 <Food data={meatData} group="主食" groupClass="meat" />

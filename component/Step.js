@@ -20,30 +20,59 @@ export default function Step() {
                     </div>
 
                     <ul className="step123 d-xl-flex justify-content-xl-around text-xl-center mt-5">
-                        <li className="d-flex d-xl-block align-items-center">
+                        <li className="d-flex d-xl-block align-items-center mb-4 mb-xl-0">
                             <span className="number ms-5 me-4 mx-xl-3">1</span>
                             <div className="stepText d-flex align-items-xl-center">
                                 <p>
-                                    在活動網站
-                                    <br className="d-none d-xl-block" />
                                     依據你的想法搭配音效，
                                     <br />
                                     做出自己的音樂。
                                 </p>
                             </div>
                         </li>
-                        <li className="d-flex d-xl-block align-items-center">
+                        <li className="d-flex d-xl-block align-items-center mb-4 mb-xl-0">
                             <span className="number ms-5 me-4 mx-xl-3">2</span>
                             <div className="stepText d-flex align-items-center">
-                                <p>將您創作的音樂下載</p>
+                                <p>
+                                    點選連結到<span>IG</span>
+                                    <br className="d-none d-xl-block" />
+                                    開始使用<span>Reels</span>
+                                    <br />
+                                    創作你的風格
+                                </p>
                             </div>
                         </li>
-                        <li className="d-flex d-xl-block align-items-center">
+                        <li className="d-flex d-xl-block align-items-center mb-4 mb-xl-0">
                             <span className="number ms-5 me-4 mx-xl-3">3</span>
                             <div className="stepText d-flex align-items-center">
                                 <p>
-                                    在<span>instagram</span> <br />用<span>Reels</span>上傳你的創作歌曲 <br />並
-                                    <span>@SUBWAYTW</span>
+                                    創作內容需有對嘴說出
+                                    <br />『
+                                    <span>
+                                        This is SUBWAY！
+                                        <br className="d-none d-xl-block" />
+                                        新鮮現做你的
+                                        <br className="d-block d-xl-none" />
+                                        獨特風味
+                                    </span>
+                                    』<br className="d-none d-xl-block" />與<span>大口吃SUBWAY</span>的畫面
+                                </p>
+                            </div>
+                        </li>
+                        <li className="d-flex d-xl-block align-items-center mb-4 mb-xl-0">
+                            <span className="number ms-5 me-4 mx-xl-3">4</span>
+                            <div className="stepText d-flex align-items-center">
+                                <p>
+                                    發佈<span>Reels</span>並<span>@SUBWAY</span>，<br />
+                                    <span>
+                                        標注指定Hashtag
+                                        <br />
+                                        #GoFresh
+                                        <br />
+                                        #最新鮮的聲音在SUBWAY
+                                        <br />
+                                        #SUMWAY現做你的新鮮
+                                    </span>
                                 </p>
                             </div>
                         </li>
