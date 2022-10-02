@@ -35,7 +35,7 @@ export default function food(props) {
                     {props.data
                         ? props.data.map((item) => (
                               <div
-                                  className="food mt-2 mx-1 pe-auto"
+                                  className="food mt-2 mx-1 mx-md-2 pe-auto"
                                   key={item.id}
                                   onClick={(e) => {
                                       setActive(e)
