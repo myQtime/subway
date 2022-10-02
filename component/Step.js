@@ -7,8 +7,8 @@ export default function Step() {
             <div className="step container-xl container-subway bg-white">
                 <div className="stepLine d-flex flex-column align-items-xl-center py-5">
                     <div className="stepTitle textMiddle text-xl-center ps-5 me-3">
-                        <p>每個食材都是你的創作基礎</p>
-                        <p>打造屬於你的堡、你的歌</p>
+                        <p>秀出自己風格～創造你的SUBWAY獨特口味 </p>
+                        <p>有機會獲得Line Point 2000點</p>
                     </div>
 
                     <div className="triGroup d-flex justify-content-start justify-content-xl-center mt-3 ms-5 me-3">
@@ -65,9 +65,7 @@ export default function Step() {
                                 <p>
                                     發佈<span>Reels</span>並<span>@SUBWAY</span>，<br />
                                     <span>
-                                        標注指定Hashtag
-                                        <br />
-                                        #GoFresh
+                                        標注指定Hashtag #GoFresh
                                         <br />
                                         #最新鮮的聲音在SUBWAY
                                         <br />

@@ -144,7 +144,7 @@
             transform: translate(-50%, -50%);
             width: 20px;
             height: 20px;
-            background-image: url('/img/download.png');
+            background-image: url('/img/stop.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%;
@@ -154,8 +154,9 @@
         font-family: 'Noto Sans TC', sans-serif;
         font-weight: 700;
         width: 50%;
-        @media (max-width: 1200px) {
-            width: 40%;
+        font-size: 12px;
+        @media (min-width: 540px) {
+            font-size: 16px;
         }
     }
 }
@@ -330,15 +331,11 @@
         font-size: 12px;
         font-weight: 400;
         opacity: 0;
+        @media (min-width: 540px) {
+            font-size: 16px;
+        }
     }
     .actived {
         opacity: 1;
     }
-}
-
-.moreChoice {
-    font-size: 16px;
-    font-weight: 700;
-    color: #008938;
-    letter-spacing: 2px;
 }

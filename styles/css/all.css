@@ -27,7 +27,7 @@ html {
 }
 
 .goFresh .textPart {
-  width: 45%;
+  width: 48%;
 }
 
 @media (max-width: 1200px) {
@@ -37,9 +37,10 @@ html {
 }
 
 .goFresh .textPart .textLarge {
-  font-size: 80px;
+  font-size: 78px;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 540px) {
@@ -51,6 +52,7 @@ html {
 .goFresh .textPart .textMiddle {
   font-size: 32px;
   font-weight: 600;
+  letter-spacing: 5px;
 }
 
 @media (max-width: 540px) {
@@ -65,12 +67,13 @@ html {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .goFresh .textPart .textSmall {
   font-size: 24px;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 1200px) {
@@ -126,7 +129,7 @@ html {
 }
 
 .goFresh .burgerPart {
-  width: 55%;
+  width: 52%;
 }
 
 .goFresh .burgerPart .md-burgerImg {
@@ -287,6 +290,13 @@ html {
 .description .tag {
   width: 30%;
   background-color: #108e4b;
+  font-size: 12px;
+}
+
+@media (min-width: 540px) {
+  .description .tag {
+    font-size: 16px;
+  }
 }
 
 .description .eventDescrip span {
@@ -295,13 +305,7 @@ html {
 
 .description .innerBlock {
   height: 100%;
-  width: 70%;
-}
-
-@media (min-width: 1200px) {
-  .description .innerBlock {
-    width: 90%;
-  }
+  width: 90%;
 }
 
 .description .innerBlock .innerText span {
@@ -324,7 +328,7 @@ html {
 
 .description .belowPart .eventAward,
 .description .belowPart .winningNotice {
-  width: 90%;
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -649,7 +653,7 @@ html {
           transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-image: url("/img/download.png");
+  background-image: url("/img/stop.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -659,11 +663,12 @@ html {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
   width: 50%;
+  font-size: 12px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 540px) {
   .controller .redoBtn {
-    width: 40%;
+    font-size: 16px;
   }
 }
 
@@ -874,15 +879,14 @@ html {
   opacity: 0;
 }
 
-.food .actived {
-  opacity: 1;
+@media (min-width: 540px) {
+  .food .foodName {
+    font-size: 16px;
+  }
 }
 
-.moreChoice {
-  font-size: 16px;
-  font-weight: 700;
-  color: #008938;
-  letter-spacing: 2px;
+.food .actived {
+  opacity: 1;
 }
 
 .notice {

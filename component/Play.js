@@ -6,6 +6,7 @@ import PlayType from './Buttons/playType'
 import Food from './Buttons/food'
 import disk from '../public/img/disk.png'
 import ham from '../public/img/ham.png'
+import burger from '../public/img/burger.png'
 import soundEffect from '../public/img/soundEffect.png'
 import YupYup from '../public/img/people/YupYup.png'
 import Mories from '../public/img/people/Mories.png'
@@ -39,8 +40,8 @@ export default function play() {
         { src: bread4, name: '白麵包', id: 'White' },
     ]
     const meatData = [
-        { src: main1, name: '嫩切牛肉', id: 'beed' },
-        { src: main2, name: '香烤雞肉', id: 'chicken' },
+        { src: main1, name: '厚切牛肉', id: 'beef' },
+        { src: main2, name: '鮮嫩雞柳', id: 'chicken' },
         { src: main3, name: '義大利牛肉丸', id: 'meat ball' },
         { src: main4, name: '火腿', id: 'ham' },
     ]
@@ -48,10 +49,10 @@ export default function play() {
         { src: veg1, name: '生菜', id: 'lettuce' },
         { src: veg2, name: '番茄', id: 'tomato' },
         { src: veg3, name: '洋蔥', id: 'onion' },
-        { src: veg4, name: '醃製物', id: 'pickled' },
+        { src: veg4, name: '墨西科辣椒', id: 'pickled' },
     ]
     const sauceData = [
-        { src: sauce1, name: '紅酒醬', id: 'red wine' },
+        { src: sauce1, name: '甜蔥醬', id: 'Sweet Onion' },
         { src: sauce2, name: '蜂蜜芥末醬', id: 'honey mustard' },
         { src: sauce3, name: '黃芥末醬', id: 'yellow mustard' },
         { src: sauce4, name: '千島醬', id: 'Thousand Island dressing' },
@@ -90,7 +91,7 @@ export default function play() {
                                     <Image src={disk} layout="intrinsic" quality={100} draggable="false" />
                                 </div>
                                 <div className="ham">
-                                    <Image src={ham} layout="intrinsic" quality={100} draggable="false" />
+                                    <Image src={burger} layout="intrinsic" quality={100} draggable="false" />
                                 </div>
                             </div>
                             <div className="soundEffect w-100 d-flex">
@@ -117,7 +118,7 @@ export default function play() {
                                 </div>
                             </div>
                         </div>
-                        <div className="rightPart container-fluid">
+                        <div className="rightPart container-fluid p-0">
                             {/* <ul className="d-flex peopleList justify-content-center justify-content-md-center mt-3">
                                 <li className="mx-2">
                                     <div className="d-flex flex-column align-items-center">
@@ -149,7 +150,6 @@ export default function play() {
                             </div>
                         </div>
                     </div>
-                    <div className="moreChoice text-center">更多選擇請洽SUBWAY各大餐廳</div>
                 </div>
             </div>
         </>

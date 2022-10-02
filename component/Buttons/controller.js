@@ -29,7 +29,7 @@ export default function controller() {
                         className="rounded-circle downloadBtn"
                         size="md"
                         onClick={() => {
-                            alert('下載')
+                            alert('停止')
                         }}
                     ></Button>
                     <Button

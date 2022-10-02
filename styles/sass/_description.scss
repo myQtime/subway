@@ -13,6 +13,10 @@
     .tag {
         width: 30%;
         background-color: #108e4b;
+        font-size: 12px;
+        @media (min-width: 540px) {
+            font-size: 16px;
+        }
     }
 
     .eventDescrip {
@@ -23,10 +27,10 @@
 
     .innerBlock {
         height: 100%;
-        width: 70%;
-        @media (min-width: 1200px) {
-            width: 90%;
-        }
+        width: 90%;
+        // @media (min-width: 1200px) {
+        //     width: 90%;
+        // }
         .innerText {
             span {
                 color: #008938;
@@ -46,7 +50,7 @@
         width: 85%;
         .eventAward,
         .winningNotice {
-            width: 90%;
+            width: 100%;
             @media (min-width: 1200px) {
                 width: 50%;
             }
