@@ -83,9 +83,30 @@ html {
   .goFresh .textPart .go::after {
     position: absolute;
     content: '';
-    width: 42.5px;
-    height: 50px;
-    left: 75%;
+    width: 25.5px;
+    height: 30px;
+    left: 30%;
+    top: 25%;
+    bottom: 0%;
+    background-color: transparent;
+    background-image: url("/img/note.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1200px) {
+  .goFresh .textPart .go {
+    position: relative;
+  }
+  .goFresh .textPart .go::after {
+    position: absolute;
+    content: '';
+    width: 25.5px;
+    height: 30px;
+    left: 100%;
+    top: 25%;
     bottom: 0%;
     background-color: transparent;
     background-image: url("/img/note.png");
@@ -129,7 +150,7 @@ html {
 }
 
 .goFresh .burgerPart {
-  width: 52%;
+  width: 59%;
 }
 
 .goFresh .burgerPart .md-burgerImg {

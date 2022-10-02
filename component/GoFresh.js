@@ -39,8 +39,8 @@ export default function GoFresh() {
                             </div>
                         </div>
                     </div>
-                    <div className="burgerPart d-none d-xl-flex flex-column align-items-center justify-content-evenly">
-                        <Image src={note} layout="fixed" draggable="false" width={42.5} height={50} />
+                    <div className="burgerPart d-none d-xl-flex flex-column align-items-center justify-content-end">
+                        {/* <Image src={note} layout="fixed" draggable="false" width={42.5} height={50} /> */}
                         <Image src={burger} draggable="false" />
                     </div>
                 </div>

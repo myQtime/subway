@@ -40,9 +40,27 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 42.5px;
-                    height: 50px;
-                    left: 75%;
+                    width: 25.5px;
+                    height: 30px;
+                    left: 30%;
+                    top: 25%;
+                    bottom: 0%;
+                    background-color: transparent;
+                    background-image: url('/img/note.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            @media (min-width: 1200px) {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 25.5px;
+                    height: 30px;
+                    left: 100%;
+                    top: 25%;
                     bottom: 0%;
                     background-color: transparent;
                     background-image: url('/img/note.png');
@@ -80,7 +98,7 @@
         }
     }
     .burgerPart {
-        width: 52%;
+        width: 59%;
         .md-burgerImg {
             width: 85%;
         }
