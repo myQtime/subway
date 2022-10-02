@@ -9,7 +9,10 @@ export default function Description() {
         <>
             <div className="description">
                 <div className="container-xl container-subway py-5 d-flex flex-column align-items-center">
-                    <div className="descripTitle text-white">GO FRESH 潛艇堡音樂DJ</div>
+                    <div className="descripTitle text-white">
+                        GO FRESH <br className="d-md-none" />
+                        潛艇堡音樂DJ
+                    </div>
                     <div className="descripSubTitle">不只好吃 還能朗朗上口</div>
                     <div className="topPart eventTime d-flex flex-column align-items-center mt-4">
                         <div className="tag rounded-pill text-center text-white">活動時間</div>

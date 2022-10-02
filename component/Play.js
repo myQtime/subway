@@ -4,10 +4,10 @@ import { useState, useEffect } from 'react'
 import Controller from '../component/Buttons/controller'
 import PlayType from './Buttons/playType'
 import Food from './Buttons/food'
-import disk from '../public/img/disk.png'
+import disk from '../public/img/gif/disk.gif'
 import ham from '../public/img/ham.png'
 import burger from '../public/img/burger.png'
-import soundEffect from '../public/img/soundEffect.png'
+import soundEffect from '../public/img/gif/soundEffect.gif'
 import YupYup from '../public/img/people/YupYup.png'
 import Mories from '../public/img/people/Mories.png'
 import oneFloor from '../public/img/people/oneFloor.png'
@@ -99,7 +99,7 @@ export default function play() {
                                     <Image src={knob} layout="intrinsic" quality={100} draggable="false" />
                                 </div>
                                 <div className="mx-3 mx-xl-0">
-                                    <Image src={soundEffect} quality={100} draggable="false" />
+                                    <Image src={soundEffect} quality={100} draggable="false" height={100} />
                                 </div>
                                 <div className="knob d-xl-none">
                                     <Image src={knob} layout="intrinsic" quality={100} draggable="false" />

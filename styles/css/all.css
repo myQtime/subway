@@ -309,52 +309,56 @@ html {
 }
 
 .description .tag {
-  width: 30%;
+  width: 40%;
   background-color: #108e4b;
+  font-size: 16px;
+}
+
+.description .tag + p {
   font-size: 12px;
 }
 
 @media (min-width: 540px) {
-  .description .tag {
+  .description .tag + p {
     font-size: 16px;
   }
 }
 
-.description .eventDescrip span {
+.eventDescrip span {
   color: #008938;
 }
 
-.description .innerBlock {
+.innerBlock {
   height: 100%;
   width: 90%;
 }
 
-.description .innerBlock .innerText span {
+.innerBlock .innerText span {
   color: #008938;
 }
 
-.description .topPart {
+.topPart {
   width: 85%;
 }
 
 @media (min-width: 1200px) {
-  .description .topPart .tag {
-    width: 15%;
+  .topPart .tag {
+    width: 20%;
   }
 }
 
-.description .belowPart {
+.belowPart {
   width: 85%;
 }
 
-.description .belowPart .eventAward,
-.description .belowPart .winningNotice {
+.belowPart .eventAward,
+.belowPart .winningNotice {
   width: 100%;
 }
 
 @media (min-width: 1200px) {
-  .description .belowPart .eventAward,
-  .description .belowPart .winningNotice {
+  .belowPart .eventAward,
+  .belowPart .winningNotice {
     width: 50%;
   }
 }

@@ -11,49 +11,55 @@
     }
 
     .tag {
-        width: 30%;
+        width: 40%;
         background-color: #108e4b;
-        font-size: 12px;
-        @media (min-width: 540px) {
-            font-size: 16px;
+        font-size: 16px;
+        // @media (min-width: 540px) {
+        //     width: 30%;
+        // }
+        & + p {
+            font-size: 12px;
+            @media (min-width: 540px) {
+                font-size: 16px;
+            }
         }
     }
+}
 
-    .eventDescrip {
+.eventDescrip {
+    span {
+        color: #008938;
+    }
+}
+
+.innerBlock {
+    height: 100%;
+    width: 90%;
+    // @media (min-width: 1200px) {
+    //     width: 90%;
+    // }
+    .innerText {
         span {
             color: #008938;
         }
     }
+}
 
-    .innerBlock {
-        height: 100%;
-        width: 90%;
-        // @media (min-width: 1200px) {
-        //     width: 90%;
-        // }
-        .innerText {
-            span {
-                color: #008938;
-            }
+.topPart {
+    width: 85%;
+    .tag {
+        @media (min-width: 1200px) {
+            width: 20%;
         }
     }
-
-    .topPart {
-        width: 85%;
-        .tag {
-            @media (min-width: 1200px) {
-                width: 15%;
-            }
-        }
-    }
-    .belowPart {
-        width: 85%;
-        .eventAward,
-        .winningNotice {
-            width: 100%;
-            @media (min-width: 1200px) {
-                width: 50%;
-            }
+}
+.belowPart {
+    width: 85%;
+    .eventAward,
+    .winningNotice {
+        width: 100%;
+        @media (min-width: 1200px) {
+            width: 50%;
         }
     }
 }
