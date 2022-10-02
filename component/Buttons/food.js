@@ -18,7 +18,7 @@ export default function food(props) {
 
     return (
         <>
-            <div className="foodGroup rounded-4  d-flex flex-column pb-3 mt-3" style={{ width: '23%' }}>
+            <div className="foodGroup rounded-4  d-flex flex-column pb-3 mt-3" style={{ width: '24%' }}>
                 <div className="rounded-pill foodGroupText text-center text-white">{props.group}</div>
                 <div>
                     {/* ▼▼▼▼渲染範例▼▼▼▼ */}
@@ -35,7 +35,7 @@ export default function food(props) {
                     {props.data
                         ? props.data.map((item) => (
                               <div
-                                  className="food mt-2 pe-auto"
+                                  className="food mt-2 mx-1 pe-auto"
                                   key={item.id}
                                   onClick={(e) => {
                                       setActive(e)
