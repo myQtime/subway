@@ -34,28 +34,28 @@ import sauce3 from '../public/img/food/sauce-3.png'
 import sauce4 from '../public/img/food/sauce-4.png'
 export default function play() {
     const breadData = [
-        { src: bread1, name: '蜂蜜燕麥', id: 'Honey Oatmeal' },
-        { src: bread2, name: '小麥麵包', id: 'Wheat' },
-        { src: bread3, name: '巴馬乾酪麵包', id: 'Parmesan Oregano' },
-        { src: bread4, name: '白麵包', id: 'White' },
+        { src: bread1, name: '蜂蜜燕麥', id: 'Honey Oatmeal', audioTrack: 'melody', melody: 'EDM_Stems' },
+        { src: bread2, name: '小麥麵包', id: 'Wheat', audioTrack: 'melody', melody: 'Hp Hop_Stems' },
+        { src: bread3, name: '巴馬乾酪麵包', id: 'Parmesan Oregano', audioTrack: 'melody', melody: 'Jazz Funk_Stems' },
+        { src: bread4, name: '白麵包', id: 'White', audioTrack: 'melody', melody: 'Rock_Stems' },
     ]
     const meatData = [
-        { src: main1, name: '厚切牛肉', id: 'beef' },
-        { src: main2, name: '鮮嫩雞柳', id: 'chicken' },
-        { src: main3, name: '義大利牛肉丸', id: 'meat ball' },
-        { src: main4, name: '火腿', id: 'ham' },
+        { src: main1, name: '厚切牛肉', id: 'beef', audioTrack: 'BGM', Beat: 'Beat 1' },
+        { src: main2, name: '鮮嫩雞柳', id: 'chicken', audioTrack: 'BGM', Beat: 'Beat 2' },
+        { src: main3, name: '義大利牛肉丸', id: 'meat ball', audioTrack: 'BGM', Beat: 'Beat 3' },
+        { src: main4, name: '火腿', id: 'ham', audioTrack: 'BGM', Beat: 'Beat 4' },
     ]
     const vegeData = [
-        { src: veg1, name: '生菜', id: 'lettuce' },
-        { src: veg2, name: '番茄', id: 'tomato' },
-        { src: veg3, name: '洋蔥', id: 'onion' },
-        { src: veg4, name: '墨西科辣椒', id: 'pickled' },
+        { src: veg1, name: '生菜', id: 'lettuce', audioTrack: 'BS', Beat: 'Beat 1' },
+        { src: veg2, name: '番茄', id: 'tomato', audioTrack: 'BS', Beat: 'Beat 2' },
+        { src: veg3, name: '洋蔥', id: 'onion', audioTrack: 'BS', Beat: 'Beat 3' },
+        { src: veg4, name: '墨西科辣椒', id: 'pickled', audioTrack: 'BS', Beat: 'Beat 4' },
     ]
     const sauceData = [
-        { src: sauce1, name: '甜蔥醬', id: 'Sweet Onion' },
-        { src: sauce2, name: '蜂蜜芥末醬', id: 'honey mustard' },
-        { src: sauce3, name: '黃芥末醬', id: 'yellow mustard' },
-        { src: sauce4, name: '千島醬', id: 'Thousand Island dressing' },
+        { src: sauce1, name: '甜蔥醬', id: 'Sweet Onion', audioTrack: 'DR', Beat: 'Beat 1' },
+        { src: sauce2, name: '蜂蜜芥末醬', id: 'honey mustard', audioTrack: 'DR', Beat: 'Beat 2' },
+        { src: sauce3, name: '黃芥末醬', id: 'yellow mustard', audioTrack: 'DR', Beat: 'Beat 3' },
+        { src: sauce4, name: '千島醬', id: 'Thousand Island dressing', audioTrack: 'DR', Beat: 'Beat 4' },
     ]
 
     return (
@@ -116,6 +116,13 @@ export default function play() {
                                 <div className="knob">
                                     <Image src={knob} layout="intrinsic" quality={100} draggable="false" />
                                 </div>
+                            </div>
+                            <div id="player">
+                                <audio id="play1"></audio>
+                                <audio id="play2"></audio>
+                                <audio id="play3"></audio>
+                                <audio id="play4"></audio>
+                                <audio id="preview"></audio>
                             </div>
                         </div>
                         <div className="rightPart container-fluid p-0">
