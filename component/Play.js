@@ -118,11 +118,11 @@ export default function play() {
                                 </div>
                             </div>
                             <div id="player">
-                                <audio id="play1"></audio>
-                                <audio id="play2"></audio>
-                                <audio id="play3"></audio>
-                                <audio id="play4"></audio>
-                                <audio id="preview"></audio>
+                                <audio id="play1" preload="auto"></audio>
+                                <audio id="play2" preload="auto"></audio>
+                                <audio id="play3" preload="auto"></audio>
+                                <audio id="play4" preload="auto"></audio>
+                                <audio id="preview" preload="auto"></audio>
                             </div>
                         </div>
                         <div className="rightPart container-fluid p-0">
