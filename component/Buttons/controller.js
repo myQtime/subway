@@ -23,11 +23,11 @@ export default function controller() {
     }
 
     const setPlay = () => {
-        const play1 = document.querySelector('#play1')
-        const play2 = document.querySelector('#play2')
-        const play3 = document.querySelector('#play3')
-        const play4 = document.querySelector('#play4')
-        const preview = document.querySelector('#preview')
+        // const play1 = document.querySelector('#play1')
+        // const play2 = document.querySelector('#play2')
+        // const play3 = document.querySelector('#play3')
+        // const play4 = document.querySelector('#play4')
+        // const preview = document.querySelector('#preview')
         if (BGM === null || BS === null || DR === null) {
             alert('配料也要喔')
             return

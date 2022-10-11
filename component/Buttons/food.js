@@ -29,8 +29,15 @@ export default function food(props) {
     }
 
     const setBeat = (e) => {
+        const play1 = document.querySelector('#play1')
+        const play2 = document.querySelector('#play2')
+        const play3 = document.querySelector('#play3')
+        const play4 = document.querySelector('#play4')
+
         if (e.audioTrack === 'melody') {
             setMelody(e.melody)
+            play1.setAttribute('src', `/audios/${e.melody}/Melody.wav`)
+
             setBGM(null)
             setBS(null)
             setDR(null)
@@ -38,12 +45,15 @@ export default function food(props) {
             switch (e.audioTrack) {
                 case 'BGM':
                     setBGM(e.Beat)
+                    play2.setAttribute('src', `/audios/${melody}/${e.Beat} BGM.wav`)
                     break
                 case 'BS':
                     setBS(e.Beat)
+                    play3.setAttribute('src', `/audios/${melody}/${e.Beat} BS.wav`)
                     break
                 case 'DR':
                     setDR(e.Beat)
+                    play4.setAttribute('src', `/audios/${melody}/${e.Beat} DR.wav`)
                     break
             }
         }
