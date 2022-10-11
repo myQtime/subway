@@ -50,7 +50,7 @@ export default function controller() {
                 preview.load()
             }
         }
-        setTimeout(play, 500)
+        setTimeout(play, 1500)
     }
 
     const pause = () => {
