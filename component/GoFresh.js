@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import burger from '../public/img/burger.png'
 import note from '../public/img/note.png'
-import qrCode from '../public/img/QR.png'
+import qrCode from '../public/img/QR.svg'
 
 export default function GoFresh() {
     return (
@@ -21,21 +21,29 @@ export default function GoFresh() {
                         </div>
                         <p className="textLarge text-white text-end text-xl-start mb-2">潛艇堡音樂DJ</p>
                         <p className="textMiddle text-white text-end text-xl-start mb-2">新鮮現做你的潛艇堡單曲</p>
-                        <div className="qrCodePart d-none d-xl-flex justify-content-xl-around">
-                            <div style={{ width: '30%' }}>
-                                <Image src={qrCode} quality={100} layout="intrinsic" draggable="false" />
-                            </div>
-                            <div className="d-flex flex-column align-items-center justify-content-evenly">
-                                <Image
-                                    src={note}
-                                    layout="fixed"
-                                    quality={100}
-                                    draggable="false"
-                                    width={42.5}
-                                    height={50}
-                                />
+                        <div className="d-none d-xl-flex justify-content-xl-center">
+                            <div
+                                className="qrCodePart d-none d-xl-flex justify-content-xl-evenly"
+                                style={{ width: '85%' }}
+                            >
+                                <div style={{ width: '30%' }}>
+                                    <Image src={qrCode} quality={100} layout="intrinsic" draggable="false" />
+                                </div>
+                                <div
+                                    className="d-flex flex-column align-items-center justify-content-evenly"
+                                    style={{ width: '50%' }}
+                                >
+                                    <Image
+                                        src={note}
+                                        layout="fixed"
+                                        quality={100}
+                                        draggable="false"
+                                        width={42.5}
+                                        height={50}
+                                    />
 
-                                <p className="textSmall text-white">到IG創造你的歌曲</p>
+                                    <p className="textSmall text-white">到IG創造你的歌曲</p>
+                                </div>
                             </div>
                         </div>
                     </div>

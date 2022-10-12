@@ -69,7 +69,7 @@ export default function Step() {
                                         <br />
                                         #最新鮮的聲音在SUBWAY
                                         <br />
-                                        #SUMWAY現做你的新鮮
+                                        #SUBWAY現做你的新鮮
                                     </span>
                                 </p>
                             </div>
