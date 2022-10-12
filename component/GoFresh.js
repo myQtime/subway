@@ -35,7 +35,7 @@ export default function GoFresh() {
                                     height={50}
                                 />
 
-                                <p className="textSmall text-white">到ig創造你的歌曲</p>
+                                <p className="textSmall text-white">到IG創造你的歌曲</p>
                             </div>
                         </div>
                     </div>

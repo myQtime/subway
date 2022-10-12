@@ -5,13 +5,8 @@ import Controller from '../component/Buttons/controller'
 import PlayType from './Buttons/playType'
 import Food from './Buttons/food'
 import disk from '../public/img/gif/disk.gif'
-import ham from '../public/img/ham.png'
 import burger from '../public/img/burger.png'
 import soundEffect from '../public/img/gif/soundEffect.gif'
-import YupYup from '../public/img/people/YupYup.png'
-import Mories from '../public/img/people/Mories.png'
-import oneFloor from '../public/img/people/oneFloor.png'
-import mayo from '../public/img/food/mayo.png'
 import knob from '../public/img/knob.png'
 import bread1 from '../public/img/food/bread-1.png'
 import bread2 from '../public/img/food/bread-2.png'
@@ -40,7 +35,7 @@ export default function play() {
         { src: bread4, name: '白麵包', id: 'White', audioTrack: 'melody', melody: 'Rock_Stems' },
     ]
     const meatData = [
-        { src: main1, name: '厚切牛肉', id: 'beef', audioTrack: 'BGM', Beat: 'Beat 1' },
+        { src: main1, name: '厚切嫩牛', id: 'beef', audioTrack: 'BGM', Beat: 'Beat 1' },
         { src: main2, name: '鮮嫩雞柳', id: 'chicken', audioTrack: 'BGM', Beat: 'Beat 2' },
         { src: main3, name: '義大利牛肉丸', id: 'meat ball', audioTrack: 'BGM', Beat: 'Beat 3' },
         { src: main4, name: '火腿', id: 'ham', audioTrack: 'BGM', Beat: 'Beat 4' },
@@ -62,7 +57,7 @@ export default function play() {
         <>
             <div className="play">
                 <div className="container-xl container-subway py-5">
-                    <div className="playTitle ">
+                    <div className="playTitle" id="DJ">
                         <div className="upper d-md-flex">
                             <div>
                                 <p className="firstText">秀出自己的風格</p>

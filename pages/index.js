@@ -14,7 +14,7 @@ export default function home() {
             <Head>
                 <title>SUBWAY</title>
                 <meta name="description" content="SUBWAY" />
-                <link rel="icon" href="/img/favicon/Subway-favicon.png" />
+                <link rel="icon" href="img/favicon/Subway-favicon.png" />
             </Head>
             <TopLogo />
             <GoFresh />
