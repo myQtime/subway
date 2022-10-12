@@ -36,10 +36,10 @@ export default function controller() {
                 play()
                 return
             } else if (isPlaySame !== melody + BGM + BS + DR) {
-                play1.setAttribute('src', `/audios/${melody}/Melody.wav`)
-                play2.setAttribute('src', `/audios/${melody}/${BGM} BGM.wav`)
-                play3.setAttribute('src', `/audios/${melody}/${BS} BS.wav`)
-                play4.setAttribute('src', `/audios/${melody}/${DR} DR.wav`)
+                play1.setAttribute('src', `./audios/${melody}/Melody.wav`)
+                play2.setAttribute('src', `./audios/${melody}/${BGM} BGM.wav`)
+                play3.setAttribute('src', `./audios/${melody}/${BS} BS.wav`)
+                play4.setAttribute('src', `./audios/${melody}/${DR} DR.wav`)
 
                 setIsPlaySame(melody + BGM + BS + DR)
 

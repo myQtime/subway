@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import phone from '../public/img/phone.png'
+import phone from '/public/img/phone.png'
 import { Button, ButtonGroup, Stack, HStack, VStack } from '@chakra-ui/react'
 
 export default function IgBlock() {

@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import logoW from '../public/img/logo-w.png'
-
 import { Button, Link } from '@chakra-ui/react'
 
 export default function Notice() {

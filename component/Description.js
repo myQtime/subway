@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import logo from '../public/img/logo.png'
-import linePoint from '../public/img/linePoint.png'
+import logo from '/public/img/logo.png'
+import linePoint from '/public/img/linePoint.png'
 
 export default function Description() {
     return (
@@ -55,10 +55,10 @@ export default function Description() {
                                     中獎名單公告
                                 </div>
                                 <p className="innerText text-center">
-                                    預計於2022/11/15(三)中午12:00前公告於
+                                    預計於2022/11/30(三)中午12:00前公告於
                                     <br />「<span>SUBWAY Taiwan</span> 」Facebook臉書粉絲團，
                                     <br />
-                                    活動小編亦會於Instagramx聯繫中獎者通知中獎
+                                    活動小編亦會於Instagram聯繫中獎者通知中獎
                                 </p>
                                 <div className="container-xl d-flex justify-content-center align-items-center py-3 px-5">
                                     {/* 這邊放圖 */}

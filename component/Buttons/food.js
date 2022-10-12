@@ -36,7 +36,7 @@ export default function food(props) {
 
         if (e.audioTrack === 'melody') {
             setMelody(e.melody)
-            play1.setAttribute('src', `/audios/${e.melody}/Melody.wav`)
+            play1.setAttribute('src', `./audios/${e.melody}/Melody.wav`)
 
             setBGM(null)
             setBS(null)
@@ -45,15 +45,15 @@ export default function food(props) {
             switch (e.audioTrack) {
                 case 'BGM':
                     setBGM(e.Beat)
-                    play2.setAttribute('src', `/audios/${melody}/${e.Beat} BGM.wav`)
+                    play2.setAttribute('src', `./audios/${melody}/${e.Beat} BGM.wav`)
                     break
                 case 'BS':
                     setBS(e.Beat)
-                    play3.setAttribute('src', `/audios/${melody}/${e.Beat} BS.wav`)
+                    play3.setAttribute('src', `./audios/${melody}/${e.Beat} BS.wav`)
                     break
                 case 'DR':
                     setDR(e.Beat)
-                    play4.setAttribute('src', `/audios/${melody}/${e.Beat} DR.wav`)
+                    play4.setAttribute('src', `./audios/${melody}/${e.Beat} DR.wav`)
                     break
             }
         }
@@ -67,11 +67,11 @@ export default function food(props) {
         const preview = document.querySelector('#preview')
 
         if (e.audioTrack === 'melody') {
-            preview.setAttribute('src', `/audios/${e.melody}/Melody.wav`)
+            preview.setAttribute('src', `./audios/${e.melody}/Melody.wav`)
         } else if (melody === null && e.audioTrack !== 'melody') {
             return
         } else if (e.audioTrack !== 'melody') {
-            preview.setAttribute('src', `/audios/${melody}/${e.Beat} ${e.audioTrack}.wav`)
+            preview.setAttribute('src', `./audios/${melody}/${e.Beat} ${e.audioTrack}.wav`)
         }
         play1.load()
         play2.load()
