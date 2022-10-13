@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 import Controller from '/component/Buttons/controller'
-import PlayType from './Buttons/playType'
 import Food from './Buttons/food'
 import disk from '/public/img/gif/disk.gif'
 import burger from '/public/img/burger.png'
@@ -29,28 +28,28 @@ import sauce3 from '/public/img/food/sauce-3.png'
 import sauce4 from '/public/img/food/sauce-4.png'
 export default function play() {
     const breadData = [
-        { src: bread1, name: '蜂蜜燕麥', id: 'Honey Oatmeal', audioTrack: 'melody', melody: 'EDM_Stems' },
-        { src: bread2, name: '小麥麵包', id: 'Wheat', audioTrack: 'melody', melody: 'Hp Hop_Stems' },
-        { src: bread3, name: '巴馬乾酪麵包', id: 'Parmesan Oregano', audioTrack: 'melody', melody: 'Jazz Funk_Stems' },
-        { src: bread4, name: '白麵包', id: 'White', audioTrack: 'melody', melody: 'Rock_Stems' },
+        { src: bread1, name: '蜂蜜燕麥', id: 'Honey Oatmeal', audioTrack: 'melody', melody: 'EDM' },
+        { src: bread2, name: '小麥麵包', id: 'Wheat', audioTrack: 'melody', melody: 'HipHop' },
+        { src: bread3, name: '巴馬乾酪麵包', id: 'Parmesan Oregano', audioTrack: 'melody', melody: 'JazzFunk' },
+        { src: bread4, name: '白麵包', id: 'White', audioTrack: 'melody', melody: 'Rock' },
     ]
     const meatData = [
-        { src: main1, name: '厚切嫩牛', id: 'beef', audioTrack: 'BGM', Beat: 'Beat 1' },
-        { src: main2, name: '鮮嫩雞柳', id: 'chicken', audioTrack: 'BGM', Beat: 'Beat 2' },
-        { src: main3, name: '義大利牛肉丸', id: 'meat ball', audioTrack: 'BGM', Beat: 'Beat 3' },
-        { src: main4, name: '火腿', id: 'ham', audioTrack: 'BGM', Beat: 'Beat 4' },
+        { src: main1, name: '厚切嫩牛', id: 'beef', audioTrack: 'BGM', Beat: 'BGM1' },
+        { src: main2, name: '鮮嫩雞柳', id: 'chicken', audioTrack: 'BGM', Beat: 'BGM2' },
+        { src: main3, name: '義大利牛肉丸', id: 'meat ball', audioTrack: 'BGM', Beat: 'BGM3' },
+        { src: main4, name: '火腿', id: 'ham', audioTrack: 'BGM', Beat: 'BGM4' },
     ]
     const vegeData = [
-        { src: veg1, name: '生菜', id: 'lettuce', audioTrack: 'BS', Beat: 'Beat 1' },
-        { src: veg2, name: '番茄', id: 'tomato', audioTrack: 'BS', Beat: 'Beat 2' },
-        { src: veg3, name: '洋蔥', id: 'onion', audioTrack: 'BS', Beat: 'Beat 3' },
-        { src: veg4, name: '墨西科辣椒', id: 'pickled', audioTrack: 'BS', Beat: 'Beat 4' },
+        { src: veg1, name: '生菜', id: 'lettuce', audioTrack: 'BS', Beat: 'BS1' },
+        { src: veg2, name: '番茄', id: 'tomato', audioTrack: 'BS', Beat: 'BS2' },
+        { src: veg3, name: '洋蔥', id: 'onion', audioTrack: 'BS', Beat: 'BS3' },
+        { src: veg4, name: '墨西科辣椒', id: 'pickled', audioTrack: 'BS', Beat: 'BS4' },
     ]
     const sauceData = [
-        { src: sauce1, name: '甜蔥醬', id: 'Sweet Onion', audioTrack: 'DR', Beat: 'Beat 1' },
-        { src: sauce2, name: '蜂蜜芥末醬', id: 'honey mustard', audioTrack: 'DR', Beat: 'Beat 2' },
-        { src: sauce3, name: '黃芥末醬', id: 'yellow mustard', audioTrack: 'DR', Beat: 'Beat 3' },
-        { src: sauce4, name: '千島醬', id: 'Thousand Island dressing', audioTrack: 'DR', Beat: 'Beat 4' },
+        { src: sauce1, name: '甜蔥醬', id: 'Sweet Onion', audioTrack: 'DR', Beat: 'DR1' },
+        { src: sauce2, name: '蜂蜜芥末醬', id: 'honey mustard', audioTrack: 'DR', Beat: 'DR2' },
+        { src: sauce3, name: '黃芥末醬', id: 'yellow mustard', audioTrack: 'DR', Beat: 'DR3' },
+        { src: sauce4, name: '千島醬', id: 'Thousand Island dressing', audioTrack: 'DR', Beat: 'DR4' },
     ]
 
     return (
@@ -113,42 +112,19 @@ export default function play() {
                                 </div>
                             </div>
                             <div id="player">
-                                <audio id="play1" preload="auto"></audio>
-                                <audio id="play2" preload="auto"></audio>
-                                <audio id="play3" preload="auto"></audio>
-                                <audio id="play4" preload="auto"></audio>
+                                <audio id="playAll" preload="auto"></audio>
                                 <audio id="preview" preload="auto"></audio>
                             </div>
                         </div>
                         <div className="rightPart container-fluid p-0">
-                            {/* <ul className="d-flex peopleList justify-content-center justify-content-md-center mt-3">
-                                <li className="mx-2">
-                                    <div className="d-flex flex-column align-items-center">
-                                        <Image src={YupYup} draggable="false" />
-                                        <p>牙牙</p>
-                                    </div>
-                                </li>
-                                <li className="mx-2">
-                                    <div className="d-flex flex-column align-items-center">
-                                        <Image src={Mories} draggable="false" />
-                                        <p>Mories</p>
-                                    </div>
-                                </li>
-                                <li className="mx-2">
-                                    <div className="d-flex flex-column align-items-center">
-                                        <Image src={oneFloor} draggable="false" />
-                                        <p>一樓</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div className="intro text-center text-white rounded-pill mt-4">
-                                點選你愛的KOL，可以套用專屬於他的曲風音樂，由你進行改造。
-                            </div> */}
                             <div className="d-flex justify-content-between">
                                 <Food data={breadData} group="麵包" groupClass="bread" />
                                 <Food data={meatData} group="主食" groupClass="meat" />
                                 <Food data={vegeData} group="生菜" groupClass="vege" />
                                 <Food data={sauceData} group="醬汁" groupClass="sauce" />
+                            </div>
+                            <div className="px-3">
+                                開啟IG Reels拍攝介面後，在左下角上傳下載的音樂影片，即可直接使用音訊拍攝
                             </div>
                         </div>
                     </div>

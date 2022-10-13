@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Stack, HStack, VStack } from '@chakra-ui/react'
+import { Button, Stack, Link } from '@chakra-ui/react'
 import { useEffect, useState, useContext } from 'react'
 import globalContext from '../../provider/GlobalProvider'
 
@@ -6,28 +6,28 @@ export default function controller() {
     const { melody, BGM, BS, DR } = useContext(globalContext)
     const [isPlaySame, setIsPlaySame] = useState('')
 
+    useEffect(() => {
+        if (BGM !== null && BS !== null && DR !== null) {
+            const download = document.querySelector('#download')
+            download.setAttribute('href', `./audios/${melody}/MP4/${melody}_${BGM}+${BS}+${DR}.mp4`)
+        }
+    }, [BGM, BS, DR])
+
     const play = () => {
-        const play1 = document.querySelector('#play1')
-        const play2 = document.querySelector('#play2')
-        const play3 = document.querySelector('#play3')
-        const play4 = document.querySelector('#play4')
+        const playAll = document.querySelector('#playAll')
         const preview = document.querySelector('#preview')
 
-        play1.play()
-        play2.play()
-        play3.play()
-        play4.play()
+        playAll.play()
         preview.load()
 
         console.log(melody, BGM, BS, DR)
     }
 
     const setPlay = () => {
-        // const play1 = document.querySelector('#play1')
-        // const play2 = document.querySelector('#play2')
-        // const play3 = document.querySelector('#play3')
-        // const play4 = document.querySelector('#play4')
-        // const preview = document.querySelector('#preview')
+        const playAll = document.querySelector('#playAll')
+        const preview = document.querySelector('#preview')
+        const download = document.querySelector('#download')
+
         if (BGM === null || BS === null || DR === null) {
             alert('配料也要喔')
             return
@@ -36,17 +36,12 @@ export default function controller() {
                 play()
                 return
             } else if (isPlaySame !== melody + BGM + BS + DR) {
-                play1.setAttribute('src', `./audios/${melody}/Melody.wav`)
-                play2.setAttribute('src', `./audios/${melody}/${BGM} BGM.wav`)
-                play3.setAttribute('src', `./audios/${melody}/${BS} BS.wav`)
-                play4.setAttribute('src', `./audios/${melody}/${DR} DR.wav`)
+                playAll.setAttribute('src', `./audios/${melody}/Wav/${melody}_${BGM}+${BS}+${DR}.wav`)
+                download.setAttribute('href', `./audios/${melody}/MP4/${melody}_${BGM}+${BS}+${DR}.mp4`)
 
                 setIsPlaySame(melody + BGM + BS + DR)
 
-                play1.load()
-                play2.load()
-                play3.load()
-                play4.load()
+                playAll.load()
                 preview.load()
             }
         }
@@ -54,30 +49,18 @@ export default function controller() {
     }
 
     const pause = () => {
-        const play1 = document.querySelector('#play1')
-        const play2 = document.querySelector('#play2')
-        const play3 = document.querySelector('#play3')
-        const play4 = document.querySelector('#play4')
+        const playAll = document.querySelector('#playAll')
         const preview = document.querySelector('#preview')
 
-        play1.pause()
-        play2.pause()
-        play3.pause()
-        play4.pause()
+        playAll.pause()
         preview.load()
     }
 
     const stop = () => {
-        const play1 = document.querySelector('#play1')
-        const play2 = document.querySelector('#play2')
-        const play3 = document.querySelector('#play3')
-        const play4 = document.querySelector('#play4')
+        const playAll = document.querySelector('#playAll')
         const preview = document.querySelector('#preview')
 
-        play1.load()
-        play2.load()
-        play3.load()
-        play4.load()
+        playAll.load()
         preview.load()
     }
 
@@ -106,21 +89,45 @@ export default function controller() {
                         }}
                     ></Button>
                     <Button
-                        className="rounded-circle downloadBtn"
+                        className="rounded-circle stopBtn"
                         size="md"
                         onClick={() => {
                             stop()
                         }}
                     ></Button>
-                    <Button
-                        className="rounded-pill redoBtn text-white"
-                        size="md"
-                        onClick={() => {
-                            alert('用此音樂拍攝Reels')
-                        }}
-                    >
-                        用此音樂拍攝Reels
-                    </Button>
+                    {BGM === null || BS === null || DR === null ? (
+                        <Link
+                            id="download"
+                            download="subwayTW"
+                            onClick={(e) => {
+                                e.preventDefault()
+                                alert('123')
+                            }}
+                        >
+                            <Button
+                                className="rounded-circle downloadBtn"
+                                size="md"
+                                onClick={() => {
+                                    stop()
+                                }}
+                            ></Button>
+                        </Link>
+                    ) : (
+                        <Link id="download" download="subwayTW">
+                            <Button
+                                className="rounded-circle downloadBtn"
+                                size="md"
+                                onClick={() => {
+                                    stop()
+                                }}
+                            ></Button>
+                        </Link>
+                    )}
+                    <Link className="link" href="https://www.instagram.com/" isExternal>
+                        <Button className="rounded-pill linkBtn text-white" size="md">
+                            拍攝Reels
+                        </Button>
+                    </Link>
                 </Stack>
             </div>
         </>

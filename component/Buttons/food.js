@@ -29,15 +29,8 @@ export default function food(props) {
     }
 
     const setBeat = (e) => {
-        const play1 = document.querySelector('#play1')
-        const play2 = document.querySelector('#play2')
-        const play3 = document.querySelector('#play3')
-        const play4 = document.querySelector('#play4')
-
         if (e.audioTrack === 'melody') {
             setMelody(e.melody)
-            play1.setAttribute('src', `./audios/${e.melody}/Melody.wav`)
-
             setBGM(null)
             setBS(null)
             setDR(null)
@@ -45,25 +38,19 @@ export default function food(props) {
             switch (e.audioTrack) {
                 case 'BGM':
                     setBGM(e.Beat)
-                    play2.setAttribute('src', `./audios/${melody}/${e.Beat} BGM.wav`)
                     break
                 case 'BS':
                     setBS(e.Beat)
-                    play3.setAttribute('src', `./audios/${melody}/${e.Beat} BS.wav`)
                     break
                 case 'DR':
                     setDR(e.Beat)
-                    play4.setAttribute('src', `./audios/${melody}/${e.Beat} DR.wav`)
                     break
             }
         }
     }
 
     const prePlay = (e) => {
-        const play1 = document.querySelector('#play1')
-        const play2 = document.querySelector('#play2')
-        const play3 = document.querySelector('#play3')
-        const play4 = document.querySelector('#play4')
+        const playAll = document.querySelector('#playAll')
         const preview = document.querySelector('#preview')
 
         if (e.audioTrack === 'melody') {
@@ -71,12 +58,9 @@ export default function food(props) {
         } else if (melody === null && e.audioTrack !== 'melody') {
             return
         } else if (e.audioTrack !== 'melody') {
-            preview.setAttribute('src', `./audios/${melody}/${e.Beat} ${e.audioTrack}.wav`)
+            preview.setAttribute('src', `./audios/${melody}/${e.Beat}.wav`)
         }
-        play1.load()
-        play2.load()
-        play3.load()
-        play4.load()
+        playAll.load()
         preview.play()
     }
 
