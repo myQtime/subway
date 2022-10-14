@@ -37,7 +37,6 @@ export default function controller() {
 
         playAll.play()
         preview.load()
-
         console.log(melody, BGM, BS, DR)
     }
 
