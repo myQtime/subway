@@ -5,6 +5,7 @@ import globalContext from '../../provider/GlobalProvider'
 export default function controller() {
     const { melody, BGM, BS, DR } = useContext(globalContext)
     const [isPlaySame, setIsPlaySame] = useState('')
+    const [instagramHref, setInstagramHref] = useState('https://www.instagram.com/')
 
     useEffect(() => {
         if (BGM !== null && BS !== null && DR !== null) {
@@ -12,6 +13,23 @@ export default function controller() {
             download.setAttribute('href', `./audios/${melody}/Mp4/${melody}_${BGM}+${BS}+${DR}.mp4`)
         }
     }, [BGM, BS, DR])
+
+    useEffect(() => {
+        switch (melody) {
+            case 'EDM':
+                setInstagramHref('https://www.instagram.com/reels/audio/1230301450895993')
+                break
+            case 'HipHop':
+                setInstagramHref('https://www.instagram.com/reels/audio/477672694333842')
+                break
+            case 'JazzFunk':
+                setInstagramHref('https://www.instagram.com/reels/audio/573568137857954')
+                break
+            case 'Rock':
+                setInstagramHref('https://www.instagram.com/reels/audio/1050173549002300')
+                break
+        }
+    }, [melody])
 
     const play = () => {
         const playAll = document.querySelector('#playAll')
@@ -101,7 +119,7 @@ export default function controller() {
                             download="subwayTW"
                             onClick={(e) => {
                                 e.preventDefault()
-                                alert('123')
+                                alert('現做你的音樂')
                             }}
                         >
                             <Button
@@ -123,7 +141,7 @@ export default function controller() {
                             ></Button>
                         </Link>
                     )}
-                    <Link className="link" href="https://www.instagram.com/" isExternal>
+                    <Link className="link" href={instagramHref} isExternal>
                         <Button className="rounded-pill linkBtn text-white" size="md">
                             拍攝Reels
                         </Button>

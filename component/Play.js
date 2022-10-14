@@ -123,9 +123,9 @@ export default function play() {
                                 <Food data={vegeData} group="生菜" groupClass="vege" />
                                 <Food data={sauceData} group="醬汁" groupClass="sauce" />
                             </div>
-                            <div className="px-3">
+                            {/* <div className="px-3">
                                 開啟IG Reels拍攝介面後，在左下角上傳下載的音樂影片，即可直接使用音訊拍攝
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
