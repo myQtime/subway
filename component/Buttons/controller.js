@@ -9,7 +9,7 @@ export default function controller() {
     useEffect(() => {
         if (BGM !== null && BS !== null && DR !== null) {
             const download = document.querySelector('#download')
-            download.setAttribute('href', `./audios/${melody}/MP4/${melody}_${BGM}+${BS}+${DR}.mp4`)
+            download.setAttribute('href', `./audios/${melody}/Mp4/${melody}_${BGM}+${BS}+${DR}.mp4`)
         }
     }, [BGM, BS, DR])
 
@@ -37,7 +37,7 @@ export default function controller() {
                 return
             } else if (isPlaySame !== melody + BGM + BS + DR) {
                 playAll.setAttribute('src', `./audios/${melody}/Wav/${melody}_${BGM}+${BS}+${DR}.wav`)
-                download.setAttribute('href', `./audios/${melody}/MP4/${melody}_${BGM}+${BS}+${DR}.mp4`)
+                download.setAttribute('href', `./audios/${melody}/Mp4/${melody}_${BGM}+${BS}+${DR}.mp4`)
 
                 setIsPlaySame(melody + BGM + BS + DR)
 
@@ -45,7 +45,7 @@ export default function controller() {
                 preview.load()
             }
         }
-        setTimeout(play, 1500)
+        play()
     }
 
     const pause = () => {

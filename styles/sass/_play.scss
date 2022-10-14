@@ -176,8 +176,12 @@
         }
     }
     .link {
+        width: 40%;
         &:hover {
             text-decoration: none;
+        }
+        .linkBtn {
+            width: 100%;
         }
     }
 }

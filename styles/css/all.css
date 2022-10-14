@@ -716,8 +716,16 @@ html {
   }
 }
 
+.controller .link {
+  width: 40%;
+}
+
 .controller .link:hover {
   text-decoration: none;
+}
+
+.controller .link .linkBtn {
+  width: 100%;
 }
 
 .playType button {
