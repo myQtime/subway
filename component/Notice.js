@@ -1,9 +1,6 @@
 import { Button, Link } from '@chakra-ui/react'
 
 export default function Notice() {
-    const makeMusic = () => {
-        alert('製作')
-    }
     return (
         <>
             <div className="notice">

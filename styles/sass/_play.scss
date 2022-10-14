@@ -339,9 +339,11 @@
 .food {
     position: relative;
     cursor: pointer;
-    &:hover {
-        .foodName {
-            opacity: 1;
+    @media (min-width: 540px) {
+        &:hover {
+            .foodName {
+                opacity: 1;
+            }
         }
     }
     .foodName {

@@ -3,20 +3,25 @@ import { useContext, useState, useEffect } from 'react'
 import globalContext from '../../provider/GlobalProvider'
 
 export default function food(props) {
-    const { melody, setMelody, BGM, setBGM, BS, setBS, DR, setDR } = useContext(globalContext)
+    const { melody, setMelody, BGM, setBGM, BS, setBS, DR, setDR, AlertBread, setAlertBread, setAlertDownload } =
+        useContext(globalContext)
     const className = `foodName text-white text-center pe-none ${props.groupClass}`
 
     const setActive = (e) => {
         if (e.target.nodeName !== 'IMG') {
             return
         } else if (props.groupClass === 'bread') {
+            setAlertBread(false)
+            setAlertDownload(false)
             const allFoods = document.querySelectorAll('.foodName')
             for (let i = 0; i < allFoods.length; i++) {
                 allFoods[i].classList.remove('actived')
             }
         } else if (props.groupClass !== 'bread') {
+            setAlertDownload(false)
             if (melody === null) {
-                alert('請先選擇麵包喔')
+                setAlertBread(true)
+                // alert('請先選擇麵包喔')
                 return
             }
             const foodNames = document.querySelectorAll(`.${props.groupClass}`)

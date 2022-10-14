@@ -1,9 +1,10 @@
 import { Button, Stack, Link } from '@chakra-ui/react'
 import { useEffect, useState, useContext } from 'react'
+
 import globalContext from '../../provider/GlobalProvider'
 
 export default function controller() {
-    const { melody, BGM, BS, DR } = useContext(globalContext)
+    const { melody, BGM, BS, DR, setAlertSide, setAlertDownload } = useContext(globalContext)
     const [isPlaySame, setIsPlaySame] = useState('')
     const [instagramHref, setInstagramHref] = useState('https://www.instagram.com/')
 
@@ -11,6 +12,7 @@ export default function controller() {
         if (BGM !== null && BS !== null && DR !== null) {
             const download = document.querySelector('#download')
             download.setAttribute('href', `./audios/${melody}/Mp4/${melody}_${BGM}+${BS}+${DR}.mp4`)
+            setAlertSide(false)
         }
     }, [BGM, BS, DR])
 
@@ -46,7 +48,8 @@ export default function controller() {
         const download = document.querySelector('#download')
 
         if (BGM === null || BS === null || DR === null) {
-            alert('配料也要喔')
+            setAlertSide(true)
+            // alert('配料也要喔')
             return
         } else if (BGM !== null && BS !== null && DR !== null) {
             if (isPlaySame === melody + BGM + BS + DR) {
@@ -118,7 +121,7 @@ export default function controller() {
                             download="subwayTW"
                             onClick={(e) => {
                                 e.preventDefault()
-                                alert('現做你的音樂')
+                                setAlertDownload(true)
                             }}
                         >
                             <Button

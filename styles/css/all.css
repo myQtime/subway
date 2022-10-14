@@ -916,8 +916,10 @@ html {
   cursor: pointer;
 }
 
-.food:hover .foodName {
-  opacity: 1;
+@media (min-width: 540px) {
+  .food:hover .foodName {
+    opacity: 1;
+  }
 }
 
 .food .foodName {

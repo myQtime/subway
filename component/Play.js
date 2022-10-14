@@ -1,8 +1,14 @@
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+
+import { useContext } from 'react'
+import globalContext from '../provider/GlobalProvider'
 
 import Controller from '/component/Buttons/controller'
 import Food from './Buttons/food'
+import AlertSideBox from './Buttons/alertSideBox'
+import AlertBreadBox from './Buttons/alertBreadBox'
+import AlertDownloadBox from './Buttons/alertDownloadBox'
+
 import disk from '/public/img/gif/disk.gif'
 import burger from '/public/img/burger.png'
 import soundEffect from '/public/img/gif/soundEffect.gif'
@@ -27,6 +33,8 @@ import sauce2 from '/public/img/food/sauce-2.png'
 import sauce3 from '/public/img/food/sauce-3.png'
 import sauce4 from '/public/img/food/sauce-4.png'
 export default function play() {
+    const { melody, BGM, BS, DR, AlertSide, AlertBread, AlertDownload } = useContext(globalContext)
+
     const breadData = [
         { src: bread1, name: '蜂蜜燕麥', id: 'Honey Oatmeal', audioTrack: 'melody', melody: 'EDM' },
         { src: bread2, name: '小麥麵包', id: 'Wheat', audioTrack: 'melody', melody: 'HipHop' },
@@ -117,6 +125,9 @@ export default function play() {
                             </div>
                         </div>
                         <div className="rightPart container-fluid p-0">
+                            {AlertSide ? <AlertSideBox /> : null}
+                            {AlertBread ? <AlertBreadBox /> : null}
+                            {AlertDownload ? <AlertDownloadBox /> : null}
                             <div className="d-flex justify-content-between">
                                 <Food data={breadData} group="麵包" groupClass="bread" />
                                 <Food data={meatData} group="主食" groupClass="meat" />

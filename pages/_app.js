@@ -10,8 +10,26 @@ function MyApp({ Component, pageProps }) {
     const [BGM, setBGM] = useState(null)
     const [BS, setBS] = useState(null)
     const [DR, setDR] = useState(null)
+    const [AlertSide, setAlertSide] = useState(false)
+    const [AlertBread, setAlertBread] = useState(false)
+    const [AlertDownload, setAlertDownload] = useState(false)
 
-    const globalContextValue = { melody, setMelody, BGM, setBGM, BS, setBS, DR, setDR }
+    const globalContextValue = {
+        melody,
+        setMelody,
+        BGM,
+        setBGM,
+        BS,
+        setBS,
+        DR,
+        setDR,
+        AlertSide,
+        setAlertSide,
+        AlertBread,
+        setAlertBread,
+        AlertDownload,
+        setAlertDownload,
+    }
     return (
         <ChakraProvider>
             <GlobalContext.Provider value={globalContextValue}>
