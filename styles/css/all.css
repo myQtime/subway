@@ -716,6 +716,10 @@ html {
   }
 }
 
+.controller .link:hover {
+  text-decoration: none;
+}
+
 .playType button {
   font-weight: 700;
   color: #008938;
