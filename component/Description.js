@@ -22,7 +22,7 @@ export default function Description() {
                             在SUBWAY活動網站創作音樂，
                             <br />
                             並在instagram上傳指定的音樂與創作內容影片， 將帳號及貼文都設成公開，
-                            <br />並<span>@SUBWAY</span>，標注指定hashtag
+                            <br />並<span>@subwaytw</span>，標注指定hashtag
                             <span> #GoFresh #最新鮮的聲音在SUBWAY #SUBWAY現做你的新鮮</span>
                             <br />
                             *品牌及參與門市保留最終解釋權及隨時不經通知終止本活動的權利。

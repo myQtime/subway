@@ -63,7 +63,7 @@ export default function Step() {
                             <span className="number ms-5 me-4 mx-xl-3">4</span>
                             <div className="stepText d-flex align-items-center">
                                 <p>
-                                    發佈<span>Reels</span>並<span>@SUBWAY</span>，<br />
+                                    發佈<span>Reels</span>並<span>@subwaytw</span>，<br />
                                     <span>
                                         標注指定Hashtag #GoFresh
                                         <br />
