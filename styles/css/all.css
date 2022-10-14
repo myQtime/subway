@@ -678,6 +678,25 @@ html {
           transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
+  background-image: url("/img/download.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.controller .stopBtn {
+  position: relative;
+}
+
+.controller .stopBtn::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
   background-image: url("/img/stop.png");
   background-size: contain;
   background-repeat: no-repeat;
