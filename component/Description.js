@@ -21,11 +21,17 @@ export default function Description() {
                         <p className="text-center">
                             在SUBWAY活動網站創作音樂，
                             <br />
-                            並在instagram上傳指定的音樂與創作內容影片， 將帳號及貼文都設成公開，
+                            並在instagram上傳指定的音樂與創作內容影片， <br className="d-md-none" />
+                            將帳號及貼文都設成公開，
                             <br />並<span>@subwaytw</span>，標注指定hashtag
-                            <span> #GoFresh #最新鮮的聲音在SUBWAY #SUBWAY現做你的新鮮</span>
-                            <br />
-                            *品牌及參與門市保留最終解釋權及隨時不經通知終止本活動的權利。
+                            <span>
+                                {' '}
+                                #GoFresh <br className="d-md-none" />
+                                #最新鮮的聲音在SUBWAY #SUBWAY現做你的新鮮
+                            </span>
+                            <br /> <br />
+                            *品牌及參與門市保留最終解釋權 <br className="d-md-none" />
+                            及隨時不經通知終止本活動的權利。
                             <br />
                             *SUBWAY®保有解釋及說明之權利。
                         </p>

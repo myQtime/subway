@@ -51,7 +51,7 @@ export default function play() {
         { src: veg1, name: '生菜', id: 'lettuce', audioTrack: 'BS', Beat: 'BS1' },
         { src: veg2, name: '番茄', id: 'tomato', audioTrack: 'BS', Beat: 'BS2' },
         { src: veg3, name: '洋蔥', id: 'onion', audioTrack: 'BS', Beat: 'BS3' },
-        { src: veg4, name: '墨西科辣椒', id: 'pickled', audioTrack: 'BS', Beat: 'BS4' },
+        { src: veg4, name: '墨西哥辣椒', id: 'pickled', audioTrack: 'BS', Beat: 'BS4' },
     ]
     const sauceData = [
         { src: sauce1, name: '甜蔥醬', id: 'Sweet Onion', audioTrack: 'DR', Beat: 'DR1' },
