@@ -26,12 +26,12 @@ export default function GoFresh() {
                                 className="qrCodePart d-none d-xl-flex justify-content-xl-evenly"
                                 style={{ width: '85%' }}
                             >
-                                <div style={{ width: '30%' }}>
+                                <div style={{ width: '35%' }}>
                                     <Image src={qrCode} quality={100} layout="intrinsic" draggable="false" />
                                 </div>
                                 <div
                                     className="d-flex flex-column align-items-center justify-content-evenly"
-                                    style={{ width: '50%' }}
+                                    style={{ width: '65%' }}
                                 >
                                     <Image
                                         src={note}
