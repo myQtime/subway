@@ -67,9 +67,14 @@ export default function play() {
                     <div className="playTitle" id="DJ">
                         <div className="upper d-md-flex">
                             <div>
-                                <p className="firstText">秀出自己的風格</p>
+                                <p className="firstText">
+                                    秀出自己的風格，
+                                    <br className="d-md-none" />
+                                    有機會獲得LINE POINT 2000點
+                                </p>
                             </div>
-                            <div className="lineDeco ms-3"></div>
+                            <div className="lineDeco d-none d-xl-block ms-3"></div>
+                            <div className="lineDeco d-md-none ms-3"></div>
                         </div>
                         <div className="lower">
                             <p className="secondText ms-5 ps-4">創造獨特口味</p>

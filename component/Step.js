@@ -34,11 +34,9 @@ export default function Step() {
                             <span className="number ms-5 me-4 mx-xl-3">2</span>
                             <div className="stepText d-flex align-items-center">
                                 <p>
-                                    點選連結到<span>IG</span>
-                                    <br className="d-none d-xl-block" />
-                                    開始使用<span>Reels</span>
+                                    點選<span>『拍攝Reels』</span>按鈕
                                     <br />
-                                    創作你的風格
+                                    到IG開始創作你的風格。
                                 </p>
                             </div>
                         </li>
@@ -46,7 +44,9 @@ export default function Step() {
                             <span className="number ms-5 me-4 mx-xl-3">3</span>
                             <div className="stepText d-flex align-items-center">
                                 <p>
-                                    創作內容需有對嘴說出
+                                    創作內容與長度不限，
+                                    <br />
+                                    需有對嘴說出
                                     <br />『
                                     <span>
                                         This is SUBWAY！
@@ -55,7 +55,7 @@ export default function Step() {
                                         <br className="d-block d-xl-none" />
                                         獨特風味
                                     </span>
-                                    』<br className="d-none d-xl-block" />與<span>大口吃SUBWAY</span>的畫面
+                                    』
                                 </p>
                             </div>
                         </li>
@@ -63,14 +63,18 @@ export default function Step() {
                             <span className="number ms-5 me-4 mx-xl-3">4</span>
                             <div className="stepText d-flex align-items-center">
                                 <p>
-                                    發佈<span>Reels</span>並<span>@subwaytw</span>，<br />
+                                    <span>影片標記@subwaytw</span>，<br />
+                                    文案
                                     <span>
-                                        標注指定Hashtag #GoFresh
+                                        hashtag #GoFresh
                                         <br />
                                         #最新鮮的聲音在SUBWAY
                                         <br />
                                         #SUBWAY現做你的新鮮
                                     </span>
+                                    。<br />
+                                    發佈Reels後，
+                                    <br />將<span>帳號及貼文都設成公開</span>。
                                 </p>
                             </div>
                         </li>
