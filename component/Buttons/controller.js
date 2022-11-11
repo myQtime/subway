@@ -1,5 +1,21 @@
 import { Button, Stack, Link } from '@chakra-ui/react'
-import { useEffect, useState, useContext } from 'react'
+
+import {
+    useDisclosure,
+    Portal,
+    Box,
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverHeader,
+    PopoverBody,
+    PopoverFooter,
+    PopoverArrow,
+    PopoverCloseButton,
+    PopoverAnchor,
+} from '@chakra-ui/react'
+
+import { useEffect, useState, useContext, useRef } from 'react'
 
 import globalContext from '../../provider/GlobalProvider'
 
@@ -7,12 +23,15 @@ export default function controller() {
     const { melody, BGM, BS, DR, setAlertSide, setAlertDownload } = useContext(globalContext)
     const [isPlaySame, setIsPlaySame] = useState('')
     const [instagramHref, setInstagramHref] = useState('https://www.instagram.com/')
+    const initRef = useRef()
+    const { onOpen, onClose, isOpen } = useDisclosure()
 
     useEffect(() => {
         if (BGM !== null && BS !== null && DR !== null) {
             const download = document.querySelector('#download')
             download.setAttribute('href', `./audios/${melody}/Mp4/${melody}_${BGM}+${BS}+${DR}.mp4`)
             setAlertSide(false)
+            onOpen()
         }
     }, [BGM, BS, DR])
 
@@ -143,9 +162,29 @@ export default function controller() {
                         </Link>
                     )}
                     <Link className="link" href={instagramHref} isExternal>
-                        <Button className="rounded-pill linkBtn text-white" size="md">
+                        {/* <Button className="rounded-pill linkBtn text-white" size="md">
                             拍攝Reels
-                        </Button>
+                        </Button> */}
+                        <Popover placement="top" initialFocusRef={initRef} isOpen={isOpen} closeOnBlur={false}>
+                            {() => (
+                                <>
+                                    <PopoverTrigger>
+                                        <Button className="rounded-pill linkBtn text-white" size="md" onClick={onClose}>
+                                            拍攝Reels
+                                        </Button>
+                                    </PopoverTrigger>
+                                    <Portal>
+                                        <PopoverContent>
+                                            <PopoverHeader>
+                                                <Box> Step 5：開始創作影片</Box>
+                                            </PopoverHeader>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton onClick={onClose} />
+                                        </PopoverContent>
+                                    </Portal>
+                                </>
+                            )}
+                        </Popover>
                     </Link>
                 </Stack>
             </div>

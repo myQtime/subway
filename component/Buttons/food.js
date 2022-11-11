@@ -100,6 +100,7 @@ export default function food(props) {
                           ))
                         : null}
                 </div>
+                {props.children}
             </div>
         </>
     )

@@ -134,14 +134,35 @@ export default function play() {
                             {AlertBread ? <AlertBreadBox /> : null}
                             {AlertDownload ? <AlertDownloadBox /> : null}
                             <div className="d-flex justify-content-between">
-                                <Food data={breadData} group="麵包" groupClass="bread" />
-                                <Food data={meatData} group="主食" groupClass="meat" />
-                                <Food data={vegeData} group="生菜" groupClass="vege" />
-                                <Food data={sauceData} group="醬汁" groupClass="sauce" />
+                                <Food data={breadData} group="麵包" groupClass="bread">
+                                    <p className="mx-3 fw-bold">
+                                        Step 1：
+                                        <br />
+                                        選擇1款麵包
+                                    </p>
+                                </Food>
+                                <Food data={meatData} group="主食" groupClass="meat">
+                                    <p className="mx-3 fw-bold">
+                                        Step 2：
+                                        <br />
+                                        選擇1款主食
+                                    </p>
+                                </Food>
+                                <Food data={vegeData} group="生菜" groupClass="vege">
+                                    <p className="mx-3 fw-bold">
+                                        Step 3：
+                                        <br />
+                                        選擇1款生菜
+                                    </p>
+                                </Food>
+                                <Food data={sauceData} group="醬汁" groupClass="sauce">
+                                    <p className="mx-3 fw-bold">
+                                        Step 4：
+                                        <br />
+                                        選擇1款醬汁
+                                    </p>
+                                </Food>
                             </div>
-                            {/* <div className="px-3">
-                                開啟IG Reels拍攝介面後，在左下角上傳下載的音樂影片，即可直接使用音訊拍攝
-                            </div> */}
                         </div>
                     </div>
                 </div>
